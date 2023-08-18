@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon/cpu.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/cpu.ico" type="image/x-icon" />
     <title>Mi Sitio</title>
   </head>
   <body>
@@ -11,16 +11,93 @@
       <h1>Home</h1>
     </header>
     <nav>
-        <a href="/index.html">Index</a>
-        <a href="/producto.html">Producto</a>
-        <a href="#">Contacto</a>
+      <a href="/index.html">Index</a>
+      <a href="/producto.html">Producto</a>
+      <a href="#">Contacto</a>
     </nav>
-<section>
-  <h3>Ubicacion</h3>
+    <br /><br /><br />
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.09546271554!2d-58.563579324448796!3d-34.67754006140027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6286935be01%3A0xa072acc56816b433!2sPlaza%20San%20Justo!5e0!3m2!1sen!2sar!4v1692140832614!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+    <form>
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            name=""
+            id="name"
+            autocomplete="off"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </p>
+        <p>
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            apellido=""
+            id="apellido"
+            autocomplete="off"
+            placeholder="Ingrese su apellido"
+            required
+          />
+        </p>
+
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          min="18"
+          max="110"
+          placeholder="18-110"
+          required
+        />
+      </fieldset>
+
+      <p>Comentarios</p>
+      <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+
+      <p>Seleccione un turno</p>
+      <Select>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+        <option value="noche">Noche</option>
+      </Select>
+
+      <p>Seleccione una o varias opciones</p>
+
+      <p>
+        <input type="checkbox" name="opcion" value="1" />C++
+        <input type="checkbox" name="opcion" value="2" />Java
+        <input type="checkbox" name="opcion" value="3" />Python
+      </p>
+
+      <p>Seleccione una opcion</p>
+      <input type="radio" name="opcion" value="1" />C++
+      <input type="radio" name="opcion" value="2" />Java
+      <input type="radio" name="opcion" value="3" />Python
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <br /><br /><br />
+
+    <section>
+      <h3>Ubicacion</h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.09546271554!2d-58.563579324448796!3d-34.67754006140027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6286935be01%3A0xa072acc56816b433!2sPlaza%20San%20Justo!5e0!3m2!1sen!2sar!4v1692140832614!5m2!1sen!2sar"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
     <footer>
-        <p>Copyright 2023</p>
+      <p>Copyright 2023</p>
     </footer>
   </body>
 </html>
