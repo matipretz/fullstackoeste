@@ -1,31 +1,28 @@
-# FS-del-oeste - TPO - CaC 4.0 Q2 - Com 23542
+# Full Stack Oeste - TPO - CaC 4.0 Q2 - Com 23542
 
 ## Documentación Preliminar del Proyecto 
 
 ### 1. Título y Descripción del Proyecto:
-- Título: "Portal digital de Code Box"
-- Descripción: Creación de un portal web para "Code Box", con el objetivo de ofrecer a otros desarrolladores noveles las herramientas necesarias para comenzar su carrera profesional.
+- Título: "Portal digital de Full Stack Oeste"
+- Descripción: Creación de un portal web para "Full Stack Oeste", con el objetivo de ofrecer servicios de desarrollo web a potenciales clientes.
 
 ### 2. Público Objetivo:
-- Público: Todo aquel que busque interiorizarse en el desarrollo de aplicaciones web.
+- Público: Todo aquel que necesite desarrollar una solución web.
 
 ### 3. Estructura del Sitio:
 - Portada/Home
-- HTML
-- CSS
-- JS
-- Recursos
-- Equipo
+- Servicios
+- Nosotros
 - Contacto
 
 ### 4. Diseño y Estilo:
 - Estilo visual: Relajado, moderno y tecnológico.
-- Colores: Azul oscuro, neones y tonos de gris.
-- Tipografía: Sans-serif para una legibilidad óptima.
+- Colores: Blanco, Jet, Verdes.
+- Tipografía: Fuente estilizada en titulares y cabeceras, Sans-serif para una legibilidad óptima en textos de cuerpo.
 
 ### 5. Contenido y Funcionalidades:
 - Contenido: Textos informativos, imágenes de proyectos anteriores, videos demostrativos.
-- Funcionalidades: Formulario de contacto funcional con Un-Static, búsqueda interna, suscripción al blog.
+- Funcionalidades: Formulario de contacto funcional con Un-Static.
 
 ### 6. Integrantes del Equipo y Representante:
 - Patricia Feltan
@@ -40,8 +37,7 @@
 - Despliegue: 12/10/2023
 
 ### 8. Recursos Externos:
-- Integración de Un-Static para la funcionalidad del formulario de
-contacto.
+- Integración de Un-Static para la funcionalidad del formulario de contacto.
 
 ### 9. Desarrollos Futuros y Mejoras Potenciales (Opcional)
 - Integración con Cafecito: Recibir donaciones que permitan mantener el sitio en linea.
@@ -67,4 +63,4 @@ contacto.
 - [x] Documentación
 
 ### 13. Paleta de colores:
-- [Paleta](https://coolors.co/visualizer/0000b8-008080-39ff14-343434)
+- [Paleta](https://coolors.co/visualizer/ffffff-008080-39ff14-343434)
