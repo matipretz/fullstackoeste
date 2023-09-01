@@ -8,7 +8,6 @@
 
 body {
   font-family: gruppo;
-  margin: 0;
   color: #343434;
 }
 
@@ -30,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-border-bottom: 1px solid #343434;
+  border-bottom: 1px solid #343434;
   transition-duration: 0.4s;
 }
 
@@ -93,31 +92,36 @@ img {
   display: block;
 }
 
-section {
+section,
+hgroup {
   text-align: center;
   padding: 50px 0;
 }
 
-section h1 {
+section h1,
+hgroup {
   font-size: 45px;
   margin-bottom: 10px;
   color: #7ed957;
 }
 
-section h2 {
+section h2,
+hgroup {
   font-size: 24px;
   color: #7ed957;
   margin-bottom: 20px;
 }
 
-section h3 {
+section h3,
+hgroup {
   font-size: 25px;
   color: #7ed957;
 }
 
-section p {
+section p,
+hgroup {
   font-size: 16px;
-  color: #444;
+  color: #343434;
   margin-bottom: 30px;
 }
 
@@ -133,23 +137,24 @@ section p {
 }
 
 .card {
-  width: 300px;
+  display: block;
+  width: 20%;
+  margin: 5%;
+  float: left;
   background-color: white;
   border: 1px solid #7ed957;
-  display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
+  border-radius: 5px;
+  padding: 10px;
   text-align: center;
+  align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.4s;
 }
 
 .card:hover {
   background-color: #6ab84c;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .card img {
@@ -164,7 +169,17 @@ section p {
 }
 
 .card p {
-  color: #444;
+  color: #343434;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+hgroup {
+  margin: 20%;
 }
 
 footer {
@@ -188,7 +203,6 @@ footer i {
     text-align: center;
   }
 
-
   nav a {
     float: none;
     display: block;
@@ -200,7 +214,6 @@ footer i {
     left: 0;
     transform: none;
     display: block;
-
   }
 
   ul {
@@ -231,6 +244,7 @@ footer i {
     font-size: 14px;
     margin-bottom: 20px;
   }
+
 
   footer p {
     font-size: 14px;

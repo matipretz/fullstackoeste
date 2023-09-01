@@ -63,4 +63,4 @@
 - [x] Documentación
 
 ### 13. Paleta de colores:
-- [Paleta](https://coolors.co/visualizer/ffffff-008080-39ff14-343434)
+- [Paleta](https://coolors.co/visualizer/ffffff-6ab84c-7ed957-343434)
