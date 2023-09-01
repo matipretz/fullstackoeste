@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo">
     <script src="js/prefixfree.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -37,6 +39,22 @@
         <p>Soluciones tecnológicas a su medida
         </p>
     </header>
+
+    <div class="container">
+        <h3>Envianos un mensaje</h3>
+        <form class="form-card" method="post" action="https://forms.un-static.com/forms/20510e1b7801f82467613406cba57a2f46514ead">
+          <label for="fname">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Tu nombre..." autocomplete="off" required>
+          <label for="lname">Correo electronico</label>
+          <input type="email" id="email" name="email" placeholder="alguien@algo.com" autocomplete="off" required>
+          <label for="subject">Mensaje</label>
+          <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"></textarea>
+          <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdCMDYnAAAAAHVuKb2uEzngt-z2oqtRBws3tL38"></div>
+          <button type="reset">Limpiar</button>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
 
     <footer>
         <p>Seguinos en nuestras redes:</p>
