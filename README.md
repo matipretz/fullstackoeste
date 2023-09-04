@@ -44,7 +44,7 @@
 - Integración con Cafecito: Recibir donaciones que permitan mantener el sitio en linea.
 
 ### 10. Contacto:
-- [Formulario de contacto del Representante](https://matipretz.ar/#contact)
+- [Formulario de contacto del Representante](https://matipretz.ar/fullstackoeste/contactos.html)
 
 ### 11. Fecha de Entrega:
 - Tentativa Jueves 19/10/2023.
