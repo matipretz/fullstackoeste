@@ -1,5 +1,4 @@
-# [Full Stack Oeste]([https://matipretz.ar/#contact](https://matipretz.ar/fullstackoeste/)) - TPO - CaC 4.0 Q2 - Com 23542
-- 
+# [Full Stack Oeste](https://matipretz.ar/fullstackoeste/) - TPO - CaC 4.0 Q2 - Com 23542
 
 
 ## Documentación Preliminar del Proyecto 
