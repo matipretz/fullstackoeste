@@ -1,0 +1,460 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/* INDEX */
+/* Estilos para el header */
+header {
+  background-color: #fff;
+  color: #7ed957;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #7ed957; 
+}
+
+.nav a:hover {
+  color: #ff9900;
+}
+
+.bx-cart {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.bx-cart:hover {
+  color: #ff9900;
+}
+/* Estilos responsive para el header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    display: block; /* Mostrar el menú en pantallas pequeñas */
+    margin-top: 10px;
+  }
+  ul{
+    flex-direction: column;
+  }
+
+  .bx-cart {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+
+/* Estilos para el carrusel */
+.carrusel {
+  width: 75%;
+  overflow: hidden;
+  margin-left: 12.5%;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.active {
+  display: block;
+}
+
+/* Estilos para la sección */
+section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+section h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #7ed957;
+}
+
+section h3 {
+  font-size: 25px;
+  color: #7ed957;
+}
+
+/* Estilos responsive section */
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 28px;
+  }
+
+  section h3 {
+    font-size: 16px;
+  }
+}
+
+
+/* Estilos del bnner */
+.banner {
+  display: block;
+  max-width: 65%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translateY(40%);
+  z-index: -1;
+}
+/* Estilos responsive del banner */
+@media (max-width: 768px) {
+  .banner {
+    /* position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 20px;
+    z-index: 1; */
+    display: none;
+  }
+}
+
+
+/* Estilos de las tarjetas */
+.card {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #7ed957;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  background-color: #6ab84c;
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  color: #7ed957;
+  margin-top: 10px;
+}
+
+.card p {
+  color: #444;
+}
+/* Estilos responsive tarjetas */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+/* Estilos de la section */
+section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #7ed957;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+section h3 {
+  font-size: 18px;
+  color: #7ed957;
+}
+ 
+/* Estilos responsive de la section */
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 20px;
+  }
+
+  section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  section h3 {
+    font-size: 16px;
+  }
+}
+
+footer {
+  background-color: #7ed957;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
+  }
+
+  footer i {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+}
+
+
+
+/* Servicios */
+
+.section-servicios {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.servicios-web,
+.servicios-marketing,
+.servicios-asesorias {
+  border: 2px solid #7ed957;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-web h2,
+.servicios-marketing h2,
+.servicios-asesorias h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.servicios-web p,
+.servicios-marketing p,
+.servicios-asesorias p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section-servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicios-web,
+  .servicios-marketing,
+  .servicios-asesorias {
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para la sección imagen */
+.section-con-imagen {
+  text-align: center;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Estilos para la imagen */
+.section-con-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+/* Estilos responsive seccion imagen */
+@media (max-width: 768px) {
+  .section-con-imagen {
+    padding: 20px 0;
+  }
+}
+
+.slogan-servicio {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slogan-h2 {
+  font-size: 24px;
+  color: #7ed957;
+  margin-bottom: 10px;
+}
+
+.slogan-p {
+  font-size: 16px;
+  color: #7ed957;
+}
+
+@media (max-width: 768px) {
+  .slogan-h2 {
+    font-size: 20px;
+  }
+
+  .slogan-p {
+    font-size: 14px;
+  }
+}
+
+
+/* estilos de las areas sobre nosotros*/
+
+.areas {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.area1 {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #7ed957;
+  padding: 20px;
+  text-align: center;
+}
+
+.area2,
+.area3,
+.area4,
+.area5 {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #7ed957;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.area1 h2,
+.area2 h3,
+.area3 h3,
+.area4 h3,
+.area5 h3 {
+  color: #7ed957;
+}
+
+.area1 p,
+.area2 p,
+.area3 p,
+.area4 p,
+.area5 p {
+  color: #000;
+}
+
+
+
+
+
+
+/* Estilos Contactos */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para etiquetas y campos */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+  background-color: #7ed957;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #5dbf41;
+}
+
+/* Estilos para el CAPTCHA */
+#captcha {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
