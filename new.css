@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --pimario: #343434;
+    --fondo: white;
+}
+
+
+
+body {
+    font-family: gruppo;
+    color: var(--pimario);
+  }
+
+nav {
+    background-color: var(--fondo);
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--pimario);
+    padding: 1rem;    
+}
+
+nav a:hover {
+    border-bottom: 1px solid var(--pimario);
+    transition-duration: 0.4s;
+}
+
+nav a.active {
+    border-bottom: 1px solid var(--pimario);
+}
+
+header {
+    background: var(--fondo);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+  } 
+  
+  header h1 {
+    font-family: Rakkas;
+  }

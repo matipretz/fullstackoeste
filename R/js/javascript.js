@@ -20,7 +20,3 @@ showSlide(currentSlide);
 
 // Cambiar de slide cada 3 segundos (3000 milisegundos)
 setInterval(nextSlide, 3000);
-
-
-
-
