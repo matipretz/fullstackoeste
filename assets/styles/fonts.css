@@ -1,0 +1,11 @@
+:root {
+    --fuenteprimaria: Rakkas;
+    --fuentesecundaria: gruppo;
+}
+nav{
+    font-family: var(--fuentesecundaria);
+}
+header h1{
+    font-family: var(--fuenteprimaria);
+    font-size: 5rem;
+}

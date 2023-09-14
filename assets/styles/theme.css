@@ -1,0 +1,37 @@
+:root {
+    scroll-behavior: smooth;
+    --fondo: #abd1c6;
+    --encabezado: #001e1d;
+    --subencabezado:#0f3433;
+    --tarjeta: #004643;
+    --tarjetaencabezado:#fffffe;
+    --tarjetaparrafo:#abd1c6;
+}
+
+html {
+    background-color: var(--fondo);
+}
+
+nav {
+    background-color: var(--encabezado);
+}
+
+nav a {
+    color: var(--tarjetaencabezado);
+}
+
+nav a:hover {
+    background-color: var(--subencabezado);   
+}
+
+nav a.active {
+    background-color: var(--subencabezado);    
+}
+
+footer {
+    background-color: var(--encabezado);
+}
+
+footer p {
+    color: var(--tarjetaencabezado);
+}
