@@ -28,10 +28,34 @@ nav a.active {
     background-color: var(--subencabezado);    
 }
 
+header h1{
+    color: var(--encabezado);
+}
+header p{
+    color: var(--subencabezado);
+}
+
+.card{
+    background-color: var(--tarjeta);
+}
+.card h2{
+    color: var(--tarjetaencabezado);
+}
+.card p{
+    color: var(--tarjetaparrafo);
+}
+
+hgroup h2, hgroup h3{
+    color: var(--subencabezado);
+}
+hgroup p{
+    color: var(--tarjeta);
+}
+
 footer {
     background-color: var(--encabezado);
 }
 
-footer p {
+footer p, footer a {
     color: var(--tarjetaencabezado);
 }

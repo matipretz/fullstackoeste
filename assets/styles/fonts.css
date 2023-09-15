@@ -1,11 +1,46 @@
 :root {
     --fuenteprimaria: Rakkas;
-    --fuentesecundaria: gruppo;
+    --fuentesecundaria: Gruppo;
 }
-nav{
+
+nav {
     font-family: var(--fuentesecundaria);
 }
-header h1{
+
+header h1 {
     font-family: var(--fuenteprimaria);
     font-size: 5rem;
+}
+
+header p {
+    font-family: var(--fuentesecundaria);
+    font-size: 2rem;
+}
+
+.card h2 {
+    font-family: var(--fuenteprimaria);
+}
+
+.card p {
+    font-family: var(--fuentesecundaria);
+}
+
+hgroup h2 {
+    font-family: var(--fuenteprimaria);
+    font-size: 4rem;
+}
+
+hgroup h3 {
+    font-family: var(--fuenteprimaria);
+    font-size: 3rem;
+
+}
+
+hgroup p {
+    font-family: var(--fuentesecundaria);
+    font-size: 2rem;
+}
+
+footer p {
+    font-family: var(--fuentesecundaria);
 }
