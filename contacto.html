@@ -17,6 +17,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <script src="assets/scripts/prefixfree.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -28,6 +30,31 @@
             <li><a class="active" href="#">Contacto</a></li>
         </ul>
     </nav>
+
+    <header>
+        <h1>Full Stack Oeste</h1>
+        <p>Envianos un mensaje</p>
+        <video class="background-video" autoplay loop muted poster="assets/images/poster.png">
+            <source src="assets/video/computer_keyboard(540p).mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <main>
+        <form class="form-card" method="post"
+            action="https://forms.un-static.com/forms/d1cd2a481fe1262f2a843294f323cf44e08b6af4">
+            <input type="text" name="name" id="name" placeholder="Tu nombre..." autocomplete="off" required>
+            <input type="email" id="email" name="email" placeholder="alguien@algo.com" autocomplete="off" required>
+            <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"
+                required></textarea>
+            <div class="g-recaptcha" data-sitekey="6LdCMDYnAAAAAHVuKb2uEzngt-z2oqtRBws3tL38"></div>
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+
+
     <footer>
         <p>Copyright &copy 2023 | Todos los derechos reservados | Full Stack Oeste |
             <a href="https://storyset.com/">Illustrations by Storyset</a>
