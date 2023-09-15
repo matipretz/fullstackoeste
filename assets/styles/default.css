@@ -50,7 +50,7 @@ main {
     padding-bottom: 3rem;
 }
 
-.triada {
+.contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
