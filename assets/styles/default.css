@@ -48,16 +48,17 @@ header {
     flex-flow: column wrap;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+
 }
 
 header h1 {
     margin-top: 10rem;
-
 }
 
 .background-video {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
     left: 0;
@@ -79,6 +80,7 @@ header h1 {
         height: auto;
         margin-top: 8rem;
     }
+
     main {
         padding-top: 3rem;
     }
@@ -86,6 +88,7 @@ header h1 {
 
 
 main {
+
     padding-bottom: 3rem;
 }
 
@@ -113,13 +116,23 @@ main {
 .card h2,
 .card p {
     justify-self: center;
-    padding: 1rem;
     margin: 0;
-}
+    padding: 0;
+    
+    }
+.card h2 {
+    padding-top: 1rem;
+    
+    
+    }
+.card p, .card img {
+    padding: 0 2rem 2rem 2rem;
+    }
 
 hgroup {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 3rem;
 }
 
 hgroup h2,
@@ -128,7 +141,6 @@ hgroup p {
     justify-self: center;
     text-align: center;
     width: 80%;
-
 }
 
 hgroup p {
