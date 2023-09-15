@@ -41,6 +41,7 @@ nav a:hover {
 }
 
 header {
+    margin-top: 5rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -53,6 +54,8 @@ main {
 }
 
 .contenedor {
+    margin-top: 5rem;
+
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -95,6 +98,8 @@ hgroup p {
 
 hgroup p {
     line-height: 5rem;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
