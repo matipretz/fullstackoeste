@@ -13,26 +13,28 @@ a {
 }
 
 nav {
-    position: absolute;
-    display: block;
     top: 0;
     left: 0;
     width: 100%;
+    position: fixed;
 }
 
 nav ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    width: 100%;
     list-style-type: none;
-    padding: 1rem;
     margin: 0;
-
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 nav a {
+    display: grid;
+    grid-template-rows: repeat(3);
     padding: 1rem;
+    text-align: center;
 }
+
 
 nav a:hover {
     transition-duration: 0.4s;
@@ -54,16 +56,16 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
 }
 
 .card {
     display: grid;
-    width: 100%;
+    width: 85%;
     grid-template-rows: repeat(3);
     border-radius: 5px;
-}
+    justify-self: center;
+    margin-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
 
 .card img {
     justify-self: center;
@@ -73,11 +75,13 @@ main {
 .card h2,
 .card p {
     justify-self: center;
+    padding: 1rem;
+    margin: 0;
 }
 
 hgroup {
     display: grid;
-    grid-template-rows: repeat(1);
+    grid-template-columns: 1fr;
 }
 
 hgroup h2,
@@ -85,6 +89,12 @@ hgroup h3,
 hgroup p {
     justify-self: center;
     text-align: center;
+    width: 80%;
+
+}
+
+hgroup p {
+    line-height: 5rem;
 }
 
 footer {
