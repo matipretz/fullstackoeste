@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
     <link rel="stylesheet" href="assets/styles/default.css">
-    <link rel="stylesheet" href="assets/styles/fonts.css">
-    <link rel="stylesheet" href="assets/styles/theme.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -20,31 +18,33 @@
     <script src="assets/scripts/prefixfree.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="active" href="#">INICIO</a></li>
-            <li><a href="servicios.html">SERVICIOS</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a class="navlink active" href="#">INICIO</a></li>
+            <li><a class="navlink" href="servicios.html">SERVICIOS</a></li>
+            <li><a class="navlink" href="nosotros.html">NOSOTROS</a></li>
+            <li><a class="navlink" href="contacto.html">CONTACTO</a></li>
         </ul>
+
     </nav>
 
-    <header>
-        <h1>FULL STACK OESTE</h1>
-        <h2>Soluciones tecnológicas a su medida</h2>
-        <video class="background-video" autoplay loop muted poster="assets/images/poster.png">
+    <header class="hero">
+        <h1 class="heroheader">FULL STACK OESTE</h1>
+        <video class="backvid" autoplay loop muted poster="assets/images/poster.png">
             <source src="assets/video/computer_keyboard(540p).mp4" type="video/mp4">
         </video>
     </header>
-
+    <hgroup class="heromain">
+        <h2>Soluciones tecnológicas a su medida</h2>
+        <h3>"Nos dedicamos a impulsar el éxito en línea de nuestros clientes. Nuestra misión es crear
+            soluciones web innovadoras y personalizadas que reflejen la visión única de cada cliente.
+            Nos esforzamos por ofrecer sitios web de alta calidad, funcionales y atractivos, con un
+            enfoque en la satisfacción del cliente y el crecimiento de su negocio en el mundo digital."
+        </h3>
+    </hgroup>
+    
     <main>
-        <hgroup>
-            <h3>"Nos dedicamos a impulsar el éxito en línea de nuestros clientes. Nuestra misión es crear
-                soluciones web innovadoras y personalizadas que reflejen la visión única de cada cliente.
-                Nos esforzamos por ofrecer sitios web de alta calidad, funcionales y atractivos, con un
-                enfoque en la satisfacción del cliente y el crecimiento de su negocio en el mundo digital."
-            </h3>
-        </hgroup>
+        
 
         <section class="contenedor">
             <article class="card">
