@@ -4,12 +4,11 @@
     --subtitulo: Pridi;
     --parrafo: Chivo Mono;
     /* COLORES */
-    --fondo: #abd1c6;
-    --encabezado: #001e1d;
-    --subencabezado: #0f3433;
-    --tarjeta: #004643;
-    --tarjetaencabezado: #fffffe;
-    --tarjetaparrafo: #abd1c6;
+    --fondoprimario: #252525;
+    --fondocolor: #004643;
+    --boton: #101010;
+    --texto: #101010;
+    --textoclaro: #F0FFF0;
 }
 
 * {
@@ -20,13 +19,20 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: var(--fondo);
+    background-color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 a {
@@ -39,6 +45,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .navlist {
@@ -51,8 +58,8 @@ a {
 .navlink {
     display: grid;
     text-align: center;
-    background-color: var(--encabezado);
-    color: var(--tarjetaencabezado);
+    background-color: var(--boton);
+    color: var(--textoclaro);
     font-family: var(--parrafo);
     font-weight: 100;
     font-size: 1rem;
@@ -62,11 +69,11 @@ a {
 
 .navlink:hover {
     transition-duration: 0.4s;
-    background-color: var(--subencabezado);
+    background-color: var(--fondocolor);
 }
 
 .navlink.active {
-    background-color: var(--subencabezado);
+    background-color: var(--fondocolor);
 }
 
 /* ///// HERO ///// */
@@ -76,7 +83,6 @@ a {
     height: 100vh;
     width: 100vw;
     justify-content: center;
-
 }
 
 .heroheader {
@@ -84,7 +90,7 @@ a {
     font-weight: 900;
     font-size: 4rem;
     align-self: center;
-    color: var(--encabezado);
+    color: var(--texto);
 }
 
 .backvid {
@@ -95,7 +101,8 @@ a {
     min-height: 100%;
     z-index: -1;
     overflow: hidden;
-    opacity: 0.7;
+    opacity: 0.6;
+    filter: blur(10px);
 }
 
 /* ///// MAIN HEADER ///// */
@@ -104,44 +111,38 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--fondo);
+    background-color: var(--fondoprimario);
     width: 100%;
 }
-.heromain > * {
+
+.heromain>* {
     width: 70%;
 }
+
 .heromain h2 {
-    color: var(--subencabezado);
+    color: var(--textoclaro);
     font-family: var(--subtitulo);
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .heromain h3 {
-    color: var(--subencabezado);
+    color: var(--textoclaro);
     font-family: var(--subtitulo);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
+    padding-bottom: 5rem;
+    line-height: 4rem;
 }
 
-
-.heromain p {
-    color: var(--tarjeta);
-    font-family: var(--parrafo);
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-}
-
+/* ///// MAIN ///// */
 main {
-    background-color: var(--fondo);
-
+    background-color: var(--fondoprimario);
 }
-
-
-
 
 .contenedor {
     width: 100%;
@@ -157,49 +158,83 @@ main {
     justify-self: center;
     margin-bottom: 3rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    opacity: 0.8;
+}
+
+.card:hover {
+    opacity: 1;
 }
 
 .card img {
     justify-self: center;
-    width: 100%;
-}
-
-.card h3,
-.card p {
-    justify-self: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    margin: 0 2rem 0 2rem;
+    background-color: var(--fondocolor);
 }
 
 .card h3 {
-    padding-top: 1rem;
+    padding: 1rem 0 1rem;
+    font-family: var(--subtitulo);
+    color: var(--textoclaro);
+    justify-self: center;
 }
 
-.card p,
-.card img {
-    padding: 0 2rem 2rem 2rem;
+.card p {
+    margin: 1rem 2rem 1rem 2rem;
+    font-family: var(--parrafo);
+    color: var(--textoclaro);
+    justify-self: center;
 }
 
+/* ///// CTA ///// */
 
+.cta {
+    position: static;
+    display: grid;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--fondoprimario);
+    color: var(--textoclaro);
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
+.cta h3 {
+    font-family: var(--subtitulo);
+    font-size: 2rem;
+}
 
+.cta p {
+    font-family: var(--parrafo);
+    font-size: 1rem;
+}
+
+.cta h2 {
+    font-family: var(--subtitulo);
+    font-size: 3rem;
+}
 
 /* ///// FOOTER ///// */
 footer {
     position: static;
-    display: block;
-    bottom: 0;
-    left: 0;
+    display: grid;
+    align-content: center;
     width: 100%;
     height: 3rem;
     text-align: center;
-    background-color: var(--encabezado);
+    background-color: var(--boton);
 
 }
 
 footer p,
 footer a {
-    color: var(--tarjetaencabezado);
+    color: var(--textoclaro);
     font-size: 1rem;
 }
+
+/* ///// FORM ///// */
 
 
 .form-card {
@@ -209,7 +244,6 @@ footer a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
-
 
 input[type=text],
 input[type=email],
