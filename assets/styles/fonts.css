@@ -1,47 +1,44 @@
 :root {
-    --titulo: Quantico;
+    --titulo: Orbitron;
     --subtitulo: Pridi;
     --parrafo: courier-prime;
 }
 
 h1 {
     font-family: var(--titulo);
+    font-weight: 900;
+    display: inline;
+    width: 50px;
 }
 
 h2,
 h3,
 h4,
 h5,
-h6,
-a {
+h6 {
     font-family: var(--subtitulo);
+    font-weight: 100;
 }
 
-p {
+p,
+a {
     font-family: var(--parrafo);
+    font-weight: 100;
 }
 
+p,
+a {
+    font-size: 1rem;
+}
 
-header h1 {
+h1 {
     font-size: 5rem;
 }
 
-header p {
-    font-size: 3rem;
-}
-
-.card h2 {
-    font-size: 2rem;
-}
-
-hgroup h2 {
+h2 {
     font-size: 4rem;
 }
 
-hgroup h3 {
+h3 {
     font-size: 3rem;
-}
-
-hgroup p {
-    font-size: 2rem;
 }
