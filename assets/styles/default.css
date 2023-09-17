@@ -261,8 +261,8 @@ textarea {
 
 button[type=submit],
 button[type=reset] {
-    background-color: #7ed957;
-    color: #343434;
+    background-color: var(--boton);
+    color: var(--textoclaro);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -273,8 +273,7 @@ button[type=reset] {
 
 button[type=submit]:hover,
 button[type=reset]:hover {
-    background-color: #343434;
-    color: #7ed957;
+    background-color: var(--fondocolor);
     transform: scale(1.1);
     transition-duration: 0.4s;
 }

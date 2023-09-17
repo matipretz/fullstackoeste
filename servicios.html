@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
     <link rel="stylesheet" href="assets/styles/default.css">
-    <link rel="stylesheet" href="assets/styles/fonts.css">
-    <link rel="stylesheet" href="assets/styles/theme.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -21,14 +19,20 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a class="active" href="#">SERVICIOS</a></li>
-            <li><a href="nosotros.html">NOSOTROs</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a class="navlink" href="index.html">INICIO</a></li>
+            <li><a class="navlink active" href="#">SERVICIOS</a></li>
+            <li><a class="navlink" href="nosotros.html">NOSOTROS</a></li>
+            <li><a class="navlink" href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
+    <header class="hero">
+        <h1 class="heroheader">FULL STACK OESTE</h1>
+        <video class="backvid" autoplay loop muted poster="assets/images/poster.png">
+            <source src="assets/video/computer_keyboard(540p).mp4" type="video/mp4">
+        </video>
+    </header>
     <footer>
         <p>Copyright &copy 2023 | Todos los derechos reservados | Full Stack Oeste |
             <a href="https://storyset.com/">Illustrations by Storyset</a>
