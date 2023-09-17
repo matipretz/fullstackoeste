@@ -38,7 +38,7 @@ header p{
 .card{
     background-color: var(--tarjeta);
 }
-.card h2{
+.card h3{
     color: var(--tarjetaencabezado);
 }
 .card p{

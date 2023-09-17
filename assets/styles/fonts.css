@@ -1,8 +1,7 @@
 :root {
     --titulo: Orbitron;
     --subtitulo: Pridi;
-    --parrafo: courier-prime;
-    --boton: ;
+    --parrafo: Chivo Mono;
 }
 
 h1 {
@@ -16,7 +15,7 @@ h4,
 h5,
 h6 {
     font-family: var(--subtitulo);
-    font-weight: 100;
+    font-weight: 700;
 }
 
 p,
@@ -25,9 +24,13 @@ a {
     font-weight: 100;
 }
 
-p,
+
 a {
     font-size: 1rem;
+}
+
+p {
+    font-size: 2rem;
 }
 
 h1 {
@@ -40,4 +43,9 @@ h2 {
 
 h3 {
     font-size: 3rem;
+}
+
+footer p,
+footer a {
+    font-size: 1rem;
 }

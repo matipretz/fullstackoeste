@@ -86,9 +86,7 @@ header h1 {
     }
 }
 
-
 main {
-
     padding-bottom: 3rem;
 }
 
@@ -113,21 +111,24 @@ main {
     width: 100%;
 }
 
-.card h2,
+.card h3,
 .card p {
     justify-self: center;
     margin: 0;
     padding: 0;
-    
-    }
-.card h2 {
+
+}
+
+.card h3 {
     padding-top: 1rem;
-    
-    
-    }
-.card p, .card img {
+
+
+}
+
+.card p,
+.card img {
     padding: 0 2rem 2rem 2rem;
-    }
+}
 
 hgroup {
     display: grid;
@@ -165,14 +166,14 @@ footer {
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
-  }
-  
-  
-  input[type=text],
-  input[type=email],
-  select,
-  textarea {
+
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -181,10 +182,10 @@ footer {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  button[type=submit],
-  button[type=reset] {
+}
+
+button[type=submit],
+button[type=reset] {
     background-color: #7ed957;
     color: #343434;
     padding: 12px 20px;
@@ -193,13 +194,12 @@ footer {
     cursor: pointer;
     margin-top: 12px;
     margin-right: 12px;
-  }
-  
-  button[type=submit]:hover,
-  button[type=reset]:hover {
+}
+
+button[type=submit]:hover,
+button[type=reset]:hover {
     background-color: #343434;
-    color:#7ed957 ;
+    color: #7ed957;
     transform: scale(1.1);
     transition-duration: 0.4s;
-  }
-  
+}
