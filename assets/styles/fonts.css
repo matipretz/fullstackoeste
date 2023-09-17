@@ -7,8 +7,6 @@
 h1 {
     font-family: var(--titulo);
     font-weight: 900;
-    display: inline;
-    width: 50px;
 }
 
 h2,
