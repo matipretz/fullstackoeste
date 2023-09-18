@@ -229,6 +229,7 @@ footer {
 footer p,
 footer a {
     color: var(--textoclaro);
+    font-family: var(--parrafo);
 
 }
 
