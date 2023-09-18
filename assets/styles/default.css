@@ -174,7 +174,7 @@ main {
 }
 
 .card h3 {
-    padding: 1rem 0 0 0 ;
+    padding: 1rem 0 0 0;
     font-family: var(--subtitulo);
     color: var(--textoclaro);
     justify-self: center;
@@ -235,39 +235,52 @@ footer p,
 footer a {
     color: var(--textoclaro);
     font-size: 1rem;
-    
+
 }
 
 /* ///// FORM ///// */
 .form-card {
-    display: grid;
+    display: block;
     background-color: var(--fondoprimario);
-    padding: 2rem;
+    margin: 0 2rem 0 2rem;
+    padding-bottom: 5rem;
+    align-content: center;
+    justify-items: center;
+}
+
+.form-card>input,
+.form-card>textarea {
+    width: 80%;
+    font-family: var(--parrafo);
+    margin: 1rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 1rem;
     border-radius: 4px;
-    box-sizing: border-box;
-    margin: 1rem 0 0 1rem;
     resize: vertical;
+    padding: 1rem;
 }
 
-button, .g-recaptcha {
+button {
+    margin: 1rem;
+    display: inline-block;
     background-color: var(--boton);
     color: var(--textoclaro);
+    font-family: var(--parrafo);
     padding: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 1rem;
-
+    width: 6rem;
+    text-align: left;
 }
 
-button[type=submit]:hover,
-button[type=reset]:hover {
+.g-recaptcha {
+    margin: 1rem;
+}
+
+button:hover {
     background-color: var(--fondocolor);
     transition-duration: 0.4s;
 }
