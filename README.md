@@ -50,13 +50,13 @@
 - Tentativa Jueves 19/10/2023.
 
 ### 12. Checklis de pautas:
-- [ ] Contenido
-- [ ] Etiquetas semánticas
+- [x] Contenido
+- [x] Etiquetas semánticas
 - [x] Formulario
-- [ ] Diseño estético
-- [ ] Diseño responsive
+- [x] Diseño estético
+- [x] Diseño responsive
 - [ ] Dinamismo visual
-- [ ] Maquetación
+- [x] Maquetación
 - [ ] API
 - [ ] Framework de CSS
 - [x] Publicación y GIT
@@ -64,4 +64,4 @@
 - [x] Documentación
 
 ### 13. Paleta de colores:
-- [Paleta](https://coolors.co/visualizer/ffffff-6ab84c-7ed957-343434)
+- [Paleta](https://coolors.co/visualizer/252525-004643-101010-F0FFF0)
