@@ -3,6 +3,7 @@
     --titulo: Orbitron;
     --subtitulo: Pridi;
     --parrafo: Chivo Mono;
+    
     /* COLORES */
     --fondoprimario: #252525;
     --fondocolor: #004643;
@@ -22,6 +23,7 @@ html {
     background-color: white;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
 }
 
 html::-webkit-scrollbar {
@@ -62,7 +64,6 @@ a {
     color: var(--textoclaro);
     font-family: var(--parrafo);
     font-weight: 100;
-    font-size: 1rem;
     height: 2rem;
     align-content: center
 }
@@ -88,7 +89,6 @@ a {
 .heroheader {
     font-family: var(--titulo);
     font-weight: 900;
-    font-size: 4rem;
     align-self: center;
     color: var(--texto);
 }
@@ -122,7 +122,6 @@ a {
 .heromain h2 {
     color: var(--textoclaro);
     font-family: var(--subtitulo);
-    font-size: 3rem;
     font-weight: 900;
     text-align: center;
     padding-top: 5rem;
@@ -132,7 +131,6 @@ a {
 .heromain h3 {
     color: var(--textoclaro);
     font-family: var(--subtitulo);
-    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     padding-bottom: 5rem;
@@ -189,7 +187,6 @@ main {
 }
 
 /* ///// CTA ///// */
-
 .cta {
     position: static;
     display: grid;
@@ -205,19 +202,16 @@ main {
 
 .cta h3 {
     font-family: var(--subtitulo);
-    font-size: 2rem;
     color: var(--textoclaro);
 
 }
 
 .cta p {
     font-family: var(--parrafo);
-    font-size: 1rem;
 }
 
 .cta h2 {
     font-family: var(--subtitulo);
-    font-size: 3rem;
 }
 
 /* ///// FOOTER ///// */
@@ -235,7 +229,6 @@ footer {
 footer p,
 footer a {
     color: var(--textoclaro);
-    font-size: 1rem;
 
 }
 
