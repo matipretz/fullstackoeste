@@ -240,9 +240,11 @@ footer a {
 
 /* ///// FORM ///// */
 .form-card {
-    display: block;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--fondoprimario);
-    margin: 0 2rem 0 2rem;
     padding-bottom: 5rem;
     align-content: center;
     justify-items: center;
@@ -250,7 +252,7 @@ footer a {
 
 .form-card>input,
 .form-card>textarea {
-    width: 80%;
+    width: 90%;
     font-family: var(--parrafo);
     margin: 1rem;
 }
@@ -272,12 +274,8 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 6rem;
-    text-align: left;
-}
-
-.g-recaptcha {
-    margin: 1rem;
+    width: 7rem;
+    text-align: center;
 }
 
 button:hover {
