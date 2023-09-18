@@ -3,7 +3,7 @@
     --titulo: Orbitron;
     --subtitulo: Pridi;
     --parrafo: Chivo Mono;
-    
+
     /* COLORES */
     --fondoprimario: #252525;
     --fondocolor: #004643;
@@ -220,9 +220,9 @@ footer {
     display: grid;
     align-content: center;
     width: 100%;
-    height: 3rem;
     text-align: center;
     background-color: var(--boton);
+    
 
 }
 
@@ -230,7 +230,20 @@ footer p,
 footer a {
     color: var(--textoclaro);
     font-family: var(--parrafo);
+    padding-bottom: 1rem;
+}
 
+.footlink {
+    display: flex;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    color: var(--fondocolor);
+
+}
+.footlink:hover {/*AL PASAR EL MOUSE POR EL ICONO*/
+    color: var(--textoclaro);/*CAMBIO DE COLOR*/
+    transform: scale(1.4);/*CAMBIO DE TAMAÑO*/
+    transition-duration: 0.4s;/*TIEMPO DE LA TRANSICION*/
 }
 
 /* ///// FORM ///// */
