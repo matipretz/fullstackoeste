@@ -80,7 +80,7 @@ a {
 .hero {
     position: static;
     display: flex;
-    height: 100vh;
+    height: 65vh;
     width: 100vw;
     justify-content: center;
 }
@@ -168,12 +168,13 @@ main {
 .card img {
     justify-self: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-    margin: 0 2rem 0 2rem;
+    margin: 1rem 2rem 0 2rem;
     background-color: var(--fondocolor);
+    max-width: 80%;
 }
 
 .card h3 {
-    padding: 1rem 0 1rem;
+    padding: 1rem 0 0 0 ;
     font-family: var(--subtitulo);
     color: var(--textoclaro);
     justify-self: center;
@@ -204,6 +205,8 @@ main {
 .cta h3 {
     font-family: var(--subtitulo);
     font-size: 2rem;
+    color: var(--textoclaro);
+
 }
 
 .cta p {
@@ -232,48 +235,39 @@ footer p,
 footer a {
     color: var(--textoclaro);
     font-size: 1rem;
+    
 }
 
 /* ///// FORM ///// */
-
-
 .form-card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+    display: grid;
+    background-color: var(--fondoprimario);
+    padding: 2rem;
 }
 
-input[type=text],
-input[type=email],
-select,
+input,
 textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 1rem;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin: 1rem 0 0 1rem;
     resize: vertical;
 }
 
-button[type=submit],
-button[type=reset] {
+button, .g-recaptcha {
     background-color: var(--boton);
     color: var(--textoclaro);
-    padding: 12px 20px;
+    padding: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 12px;
-    margin-right: 12px;
+    margin: 1rem;
+
 }
 
 button[type=submit]:hover,
 button[type=reset]:hover {
     background-color: var(--fondocolor);
-    transform: scale(1.1);
     transition-duration: 0.4s;
 }
