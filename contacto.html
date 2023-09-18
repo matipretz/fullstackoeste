@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Full Stack Oeste</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es el Trabajo Practico Obligatorio de Codo a Codo 4.0 de la comisión 23542.">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
+    <link rel="stylesheet" href="assets/styles/default.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <script src="assets/scripts/prefixfree.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a class="navlink" href="index.html">INICIO</a></li>
+            <li><a class="navlink" href="servicios.html">SERVICIOS</a></li>
+            <li><a class="navlink" href="nosotros.html">NOSOTROS</a></li>
+            <li><a class="navlink active" href="#">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+
+    <hgroup class="heromain">
+        <h2>Envianos un mensaje</h2>
+    </hgroup>
+
+    <main>
+
+        <form class="form-card" id="form" method="post"
+            action="https://forms.un-static.com/forms/d1cd2a481fe1262f2a843294f323cf44e08b6af4">
+            <input type="text" name="name" id="name" placeholder="Tu nombre..." autocomplete="off" required>
+            <input type="email" id="email" name="email" placeholder="alguien@algo.com" autocomplete="off" required>
+            <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"
+                required></textarea>
+            <button type="reset">Limpiar</button>
+            <button type="submit" class="g-recaptcha" data-sitekey="6Lf-ATMoAAAAAOCUXtiy7Kz5vN9LylYtowz43aIm
+            " data-callback='onSubmit'
+                data-action='submit'>Enviar</button>
+        </form>
+        <script>
+            function onSubmit(token) {
+                document.getElementById("form").submit();
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>Copyright &copy 2023 | Todos los derechos reservados | Full Stack Oeste |
+            <a href="https://storyset.com/">Illustrations by Storyset</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

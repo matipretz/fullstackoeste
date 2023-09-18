@@ -2,85 +2,103 @@
 <html lang="es">
 
 <head>
-    <title>Full Stack Oeste | Sobre Nosotros</title>
+    <title>Full Stack Oeste</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Este es el Trabajo Practico Obligatorio de Codo a Codo 4.0 de la comisión 23542.">
     <meta name="robots" content="index,follow">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo">
-    <script src="js/prefixfree.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
+    <link rel="stylesheet" href="assets/styles/default.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <script src="assets/scripts/prefixfree.js"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a class="logo" href="index.html"><img src="img/Logo.png" alt="Full Stack Oeste"
-                        title="Full Stack Oeste" width="32px">
-                </a></li>
-            <div class="centro">
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a class="active" href="#">Nosotros</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </div>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a class="navlink" href="index.html">INICIO</a></li>
+            <li><a class="navlink" href="servicios.html">SERVICIOS</a></li>
+            <li><a class="navlink active" href="#">NOSOTROS</a></li>
+            <li><a class="navlink" href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Full Stack Oeste</h1>
-        <p>Soluciones tecnológicas a su medida
+
+    <hgroup class="heromain">
+        <h2>Nuestra Historia, Tu Futuro en Línea</h2>
+        <h3>"En FullStack Oeste, te invitamos a descubrir la esencia de nuestro equipo apasionado por la web.
+            Desde nuestra fundación, hemos estado creando soluciones web excepcionales que transforman ideas en
+            experiencias digitales cautivadoras.
+            Nuestro enfoque en la innovación, el diseño centrado en el usuario y la excelencia técnica nos ha convertido
+            en socios confiables para empresas de todos los tamaños.
+            Nuestra historia se refleja en cada proyecto, y nuestro compromiso es forjar un futuro exitoso en línea para
+            ti.</h3>
+    </hgroup>
+
+    <main>
+        <section class="contenedor">
+            <article class="card">
+                <h3>Visión</h3>
+                <p>"Nos visualizamos como líderes en la industria del contenido digital, impulsando la
+                    innovación tecnológica y la excelencia en diseño. Nuestra visión es ser reconocidos por
+                    nuestra capacidad para transformar ideas en soluciones digitales efectivas y de vanguardia.
+                    Aspiramos a ser el socio preferido de nuestros clientes, brindándoles un camino claro hacia
+                    el éxito en línea y contribuyendo al crecimiento sostenible de sus negocios en un mundo cada
+                    vez más digitalizado."</p>
+            </article>
+            <article class="card">
+                <h3>Valores</h3>
+                <p>"Nos fundamos en la creatividad, la innovación y la colaboración. Nos esforzamos por inspirar
+                    a través del diseño, abrazando la creatividad como motor de la excelencia. Valoramos la
+                    innovación constante, adaptándonos a las últimas tendencias tecnológicas para brindar
+                    soluciones de vanguardia. Fomentamos la colaboración estrecha con nuestros clientes, basada
+                    en la transparencia y la confianza mutua. La calidad, la ética y el compromiso con la
+                    satisfacción del cliente son la base de todo lo que hacemos."</p>
+            </article>
+        </section>
+
+        <section class="contenedor">
+            <article class="card">
+                <h3>Ricardo</h3>
+                <img src="assets/images/profile/profile-ric.png" alt="Ricardo">
+                <p>Diseñador</p>
+            </article>
+
+            <article class="card">
+                <h3>Matías</h3>
+                <img src="assets/images/profile/profile-mati.png" alt="Matías">
+                <p>Desarrollador</p>
+            </article>
+
+            <article class="card">
+                <h3>Patricia</h3>
+                <img src="assets/images/profile/profile-pato.png" alt="Patricia">
+                <p>Manager de producto</p>
+            </article>
+
+            <article class="card">
+                <h3>Alan</h3>
+                <img src="assets/images/profile/profile-alan.png" alt="Alan">
+                <p>Testing</p>
+            </article>
+
+            <article class="card">
+                <h3>Eliana</h3>
+                <img src="assets/images/profile/profile-eli.png" alt="Eliana">
+                <p>Quality Assurance</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy 2023 | Todos los derechos reservados | Full Stack Oeste |
+            <a href="https://storyset.com/">Illustrations by Storyset</a>
         </p>
-    </header>
-
-    <section class="clearfix">
-
-        <article class="card">
-            <img src="img/profile-pato.png" alt="Patricia Feltan">
-            <h2>Patricia Feltan</h2>
-            <p>CEO</p>
-            <p>Patricia@Feltan.com</p>
-        </article>
-
-        <article class="card">
-            <img src="img/profile-mati.png" alt="Matías Pretz">
-            <h2>Matías Pretz</h2>
-            <p>Desarrollo</p>
-            <p>Matías@Pretz.com</p>
-        </article>
-
-        <article class="card">
-            <img src="img/profile-ric.png" alt="Ricardo Torales">
-            <h2>Ricardo Torales</h2>
-            <p>Director de arte</p>
-            <p>Ricardo@Torales.com</p>
-        </article>
-
-
-        <section>
-
-            <hgroup>
-                <h2>¿Buscas que tus productos y/o servicios impacten y lleguen a mas personas?</h2>
-                <p>Con nuestros servicios de diseño web, diseño de campañas de marketing y gestión de redes sociales,
-                    podemos
-                    ayudarte a crear campañas que sean atractivas, funcionales y efectivas.</p>
-                <h3>¡Contáctanos hoy mismo!</h3>
-            </hgroup>
-
-            <footer>
-                <p>Seguinos en nuestras redes:</p>
-                <i class='bx bxl-whatsapp bx-lg' style='color:#fff'></i>
-                <i class='bx bxl-facebook-circle bx-lg' style='color:#fff'></i>
-                <i class='bx bxl-gmail bx-lg' style='color:#fff'></i>
-                <p>Copyright © 2023 | Todos los derechos reservados | Full Stack Oeste</p>
-            </footer>
+    </footer>
 </body>
 
 </html>
-
-<script src="js/javascript.js"></script>
