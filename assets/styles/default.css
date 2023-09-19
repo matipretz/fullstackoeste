@@ -196,15 +196,23 @@ main {
     color: var(--fondocolor);
 }
 
+
 hr{
     margin: 3rem 0 0 0;
     width: 100%;
 }
 
-.iconcard > img, .iconcard > svg{
+.iconcard > i, .iconcard > svg{
     display: flex;
+    color: var(--fondocolor);
+    transition-duration: 0.4s;
 }
 
+.iconcard > i:hover, .iconcard > svg:hover{
+    color: var(--textoclaro);
+    transform: scale(1.4);
+    transition-duration: 0.4s;
+}
 svg{
     fill: currentColor;
     width: 80px;
