@@ -187,6 +187,31 @@ main {
     justify-self: center;
 }
 
+/* ///// ICON CARDS ///// */
+.iconcard{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 5rem;
+    color: var(--fondocolor);
+}
+
+hr{
+    margin: 3rem 0 0 0;
+    width: 100%;
+}
+
+.iconcard > img, .iconcard > svg{
+    display: flex;
+}
+
+svg{
+    fill: currentColor;
+    width: 80px;
+    height: 80px;
+}
+
+
 /* ///// CTA ///// */
 .cta {
     position: static;
@@ -223,8 +248,6 @@ footer {
     width: 100%;
     text-align: center;
     background-color: var(--boton);
-    
-
 }
 
 footer p,
@@ -240,13 +263,12 @@ footer a {
     margin-left: 2rem;
     color: var(--fondocolor);
     transition-duration: 0.4s;
-
-
 }
-.footlink:hover {/*AL PASAR EL MOUSE POR EL ICONO*/
-    color: var(--textoclaro);/*CAMBIO DE COLOR*/
-    transform: scale(1.4);/*CAMBIO DE TAMAÑO*/
-    transition-duration: 0.4s;/*TIEMPO DE LA TRANSICION*/
+
+.footlink:hover {
+    color: var(--textoclaro);
+    transform: scale(1.4);
+    transition-duration: 0.4s;
 }
 
 /* ///// FORM ///// */
