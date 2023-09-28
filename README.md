@@ -28,9 +28,10 @@
 ### 6. Integrantes del Equipo y Representante:
 - Patricia Feltan
 - Matias Murad
-- Franco Miranda
 - Ricardo Torales
-
+- Eliana Balbuena
+- Alan Damian
+  
 ### 7. Cronograma Tentativo:
 - Diseño y planificación: 01/09/2023
 - Desarrollo y programación: 21/09/2023
