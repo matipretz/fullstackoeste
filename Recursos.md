@@ -99,4 +99,3 @@
 - [GIT Reference Manual](https://git-scm.com/docs)
 - [GitHub Skills](https://skills.github.com/)
 - [Show the docs](http://showthedocs.com/)
-
