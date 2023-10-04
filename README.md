@@ -44,7 +44,6 @@
 - Matias Murad
 - Ricardo Torales
 - Eliana Balbuena
-- Alan Damian
   
 ## Recursos Externos:
 - Integración de Un-Static para la funcionalidad del formulario de contacto.
