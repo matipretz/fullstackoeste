@@ -1,4 +1,4 @@
-- Fuentes Responsive   
+- Fuentes Responsive @ done  
 - SPA
 - API Simple Icons
 - Loader
