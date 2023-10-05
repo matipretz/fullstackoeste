@@ -1,0 +1,6 @@
+- Fuentes Responsive   
+- SPA
+- API Simple Icons
+- Loader
+- Verif FORM
+- Scale Media Query
