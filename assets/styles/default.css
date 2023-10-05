@@ -188,7 +188,7 @@ main {
 }
 
 /* ///// ICON CARDS ///// */
-.iconcard{
+.iconcard {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -197,23 +197,26 @@ main {
 }
 
 
-hr{
+hr {
     margin: 3rem 0 0 0;
     width: 100%;
 }
 
-.iconcard > i, .iconcard > svg{
+.iconcard>i,
+.iconcard>svg {
     display: flex;
     color: var(--fondocolor);
     transition-duration: 0.4s;
 }
 
-.iconcard > i:hover, .iconcard > svg:hover{
+.iconcard>i:hover,
+.iconcard>svg:hover {
     color: var(--textoclaro);
     transform: scale(1.4);
     transition-duration: 0.4s;
 }
-svg{
+
+svg {
     fill: currentColor;
     width: 80px;
     height: 80px;
@@ -325,3 +328,14 @@ button:hover {
     transition-duration: 0.4s;
 }
 
+@media only screen and (min-width: 1201px) {
+    :root {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        font-size: 20px;
+    }
+}
