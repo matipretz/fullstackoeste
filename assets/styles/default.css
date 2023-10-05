@@ -189,12 +189,12 @@ main {
 
 /* ///// ICON CARDS ///// */
 .iconcard {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 5rem;
+    display: flex;
+    gap: 1rem;
     color: var(--fondocolor);
-}
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 
 hr {
@@ -202,25 +202,18 @@ hr {
     width: 100%;
 }
 
-.iconcard>i,
-.iconcard>svg {
+.iconcard>img {
     display: flex;
-    color: var(--fondocolor);
+    color: var(--primario);
     transition-duration: 0.4s;
-}
-
-.iconcard>i:hover,
-.iconcard>svg:hover {
-    color: var(--textoclaro);
+    width: 80px;
+    height: 80px;  
+  }
+  
+  .iconcard>img:hover {
     transform: scale(1.4);
     transition-duration: 0.4s;
-}
-
-svg {
-    fill: currentColor;
-    width: 80px;
-    height: 80px;
-}
+  }
 
 
 /* ///// CTA ///// */
