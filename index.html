@@ -1,85 +1,248 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <!-- Meta -->
     <title>Full Stack Oeste</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Este es el Trabajo Practico Obligatorio de Codo a Codo 4.0 de la comisión 23542.">
     <meta name="robots" content="index,follow">
+    <!-- Font Families -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/default.css">
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- Scripts -->
     <script src="assets/scripts/prefixfree.js"></script>
     <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/recaptcha.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
+    <!-- NAV -->
     <nav class="navbar">
         <ul class="navlist">
-            <li><a class="navlink active" href="#">HOME</a></li>
-            <li><a class="navlink" href="servicios.html">SERVICIOS</a></li>
-            <li><a class="navlink" href="nosotros.html">NOSOTROS</a></li>
-            <li><a class="navlink" href="contacto.html">CONTACTO</a></li>
+            <li><a id="viewlink1" class="navlink" href="#">HOME</a></li>
+            <li><a id="viewlink2" class="navlink" href="#">SERVICIOS</a></li>
+            <li><a id="viewlink3" class="navlink" href="#">NOSOTROS</a></li>
+            <li><a id="viewlink4" class="navlink" href="#">CONTACTO</a></li>
         </ul>
-
     </nav>
-
+    <!-- HERO -->
     <header class="hero">
         <h1 class="heroheader">FULL STACK OESTE</h1>
         <video class="backvid" autoplay loop muted poster="assets/video/computer_keyboard(540p)poster.png">
             <source src="assets/video/computer_keyboard(540p).mp4" type="video/mp4">
             <source src="assets/video/computer_keyboard(540p).mov" type="video/mov">
         </video>
-    </header>
-    <hgroup class="heromain">
-        <h2>Soluciones tecnológicas a su medida</h2>
-        <h3>Nos dedicamos a impulsar el éxito en línea de nuestros clientes. Nuestra misión es crear
-            soluciones web innovadoras y personalizadas que reflejen la visión única de cada cliente.
-            Nos esforzamos por ofrecer sitios web de alta calidad, funcionales y atractivos, con un
-            enfoque en la satisfacción del cliente y el crecimiento de su negocio en el mundo digital.
-        </h3>
-    </hgroup>
-
-    <main>
-
-
-        <section class="contenedor">
-            <article class="card">
-                <h3>Diseños Web</h3>
-                <img src="assets/images/svg/Office work-amico.svg" alt="Diseños Web">
-                <p>Creación de sitios web atractivos y funcionales.</p>
-            </article>
-
-            <article class="card">
-                <h3>Marketing</h3>
-                <img src="assets/images/svg/Business support-amico.svg" alt="Marketing">
-                <p>Estrategias de marketing digital para destacar tu negocio.</p>
-            </article>
-
-            <article class="card">
-                <h3>Asesorías</h3>
-                <img src="assets/images/svg/Consulting-amico.svg" alt="Asesorías">
-                <p>Asesoramiento profesional para impulsar tu proyecto.</p>
-            </article>
-        </section>
-
-        <hgroup class="cta">
-            <h2>¿Buscás generar impacto y llegar a más personas?</h2>
-            <p>Con nuestros servicios de diseño web podemos ayudarte a crear campañas que sean atractivas, funcionales y
-                efectivas.
-            </p>
-            <a href="contacto.html/">
-                <h3>¡Contactános hoy mismo!</h3>
-            </a>
-
+    </header>    
+    <!-- Home -->    
+    <div id="view1" class="view">
+        <hgroup class="heromain">
+            <h2>Soluciones tecnológicas a su medida</h2>
+            <h3>Nos dedicamos a impulsar el éxito en línea de nuestros clientes. Nuestra misión es crear
+                soluciones web innovadoras y personalizadas que reflejen la visión única de cada cliente.
+                Nos esforzamos por ofrecer sitios web de alta calidad, funcionales y atractivos, con un
+                enfoque en la satisfacción del cliente y el crecimiento de su negocio en el mundo digital.
+            </h3>
         </hgroup>
-    </main>
-    
+        <main>
+            <section class="contenedor">
+                <article class="card">
+                    <h3>Diseños Web</h3>
+                    <img src="assets/images/svg/Office work-amico.svg" alt="Diseños Web">
+                    <p>Creación de sitios web atractivos y funcionales.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Marketing</h3>
+                    <img src="assets/images/svg/Business support-amico.svg" alt="Marketing">
+                    <p>Estrategias de marketing digital para destacar tu negocio.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Asesorías</h3>
+                    <img src="assets/images/svg/Consulting-amico.svg" alt="Asesorías">
+                    <p>Asesoramiento profesional para impulsar tu proyecto.</p>
+                </article>
+            </section>
+
+            <hgroup class="cta">
+                <h2>¿Buscás generar impacto y llegar a más personas?</h2>
+                <p>Con nuestros servicios de diseño web podemos ayudarte a crear campañas que sean atractivas,
+                    funcionales y
+                    efectivas.
+                </p>
+                <a href="contacto.html/">
+                    <h3>¡Contactános hoy mismo!</h3>
+                </a>
+            </hgroup>
+        </main>
+    </div>
+    <!-- Servicios -->
+    <div id="view2" class="view">
+        <hgroup class="heromain">
+            <h2>Servicios FullStack Oeste</h2>
+        </hgroup>
+        <main>
+            <section class="contenedor">
+                <article class="card">
+                    <h3>Diseños Web</h3>
+                    <img src="assets/images/stock/imagen (2).png" alt="Diseños Web">
+                    <p>Transformamos ideas en impactantes sitios web. Desata el poder de tu presencia en línea. Tu
+                        negocio
+                        merece la mejor imagen. ¡Conquista la web con nosotros!</p>
+                </article>
+
+                <article class="card">
+                    <h3>Marketing</h3>
+                    <img src="assets/images/stock/imagen (1).png" alt="Marketing">
+                    <p>¿Quieres llevar tu negocio al siguiente nivel? Deja que nuestro equipo de expertos en marketing
+                        te
+                        guíe hacia el éxito. Estrategias probadas, resultados reales. No esperes más para brillar en el
+                        mercado. ¡Conquista tus objetivos de marketing con nosotros!</p>
+                </article>
+
+                <article class="card">
+                    <h3>Asesorías</h3>
+                    <img src="assets/images/stock/imagen (3).png" alt="Asesorías">
+                    <p>¿Necesitas el impulso adecuado para tu marca? Nuestras asesorías personalizadas desbloquean el
+                        potencial oculto de tu negocio. Desde publicidad impactante hasta lanzamientos estratégicos y
+                        dominio en redes, te guiamos hacia el éxito. ¡Deja tu huella en el mercado y conecta con tu
+                        audiencia como nunca antes!</p>
+                </article>
+            </section>
+
+            <div class="heromain">
+                <hr>
+                <div class="contenedor-imagenes"></div>
+                <h2>Tecnologias</h2>
+                <section class="iconcard">
+                    <img src="https://cdn.simpleicons.org/visualstudiocode" title="Visual Studio Code"
+                        alt="Visual Studio Code Logo" />
+                    <img src="https://cdn.simpleicons.org/html5" title="HTML5" alt="HTML5 Logo" />
+                    <img src="https://cdn.simpleicons.org/css3" title="CSS3" alt="CSS3 Logo" />
+                    <img src="https://cdn.simpleicons.org/bootstrap" title="Bootstrap" alt="Bootstrap Logo" />
+                    <img src="https://cdn.simpleicons.org/git" title="Git" alt="Git Logo" />
+                    <img class="invert" src="https://cdn.simpleicons.org/github" title="GitHub" alt="GitHub Logo" />
+                </section>
+
+                <h2>En Progreso:</h2>
+                <section class="iconcard">
+                    <img src="https://cdn.simpleicons.org/javascript" title="JavaScript" alt="JavaScript Logo" />
+                </section>
+
+                <h2>Proximamente:</h2>
+                <section class="iconcard">
+                    <img src="https://cdn.simpleicons.org/vue.js" title="Vue.js" alt="Vue.js Logo" />
+                    <img src="https://cdn.simpleicons.org/mysql" title="MySQL" alt="MySQL Logo" />
+                    <img src="https://cdn.simpleicons.org/python" title="Python" alt="Python Logo" />
+                    <img class="invert" src="https://cdn.simpleicons.org/flask" title="Flask" alt="Flask Logo" />
+                </section>
+                <hr>
+            </div>
+        </main>
+        <hgroup class="cta">
+            <h2>Creando tu presencia digital</h2>
+            <p>Nuestro diseño web vanguardista transforma tu visión en una presencia digital impresionante, cautivando a
+                tu audiencia en línea.</p>
+        </hgroup>
+
+    </div>
+    <!-- Nosotros -->
+    <div id="view3" class="view">
+        <hgroup class="heromain">
+            <h2>Nuestra Historia, Tu Futuro en Línea</h2>
+            <h3>"En FullStack Oeste, te invitamos a descubrir la esencia de nuestro equipo apasionado por la web.
+                Desde nuestra fundación, hemos estado creando soluciones web excepcionales que transforman ideas en
+                experiencias digitales cautivadoras.
+                Nuestro enfoque en la innovación, el diseño centrado en el usuario y la excelencia técnica nos ha
+                convertido
+                en socios confiables para empresas de todos los tamaños.
+                Nuestra historia se refleja en cada proyecto, y nuestro compromiso es forjar un futuro exitoso en línea
+                para
+                ti.</h3>
+        </hgroup>
+
+        <main>
+            <section class="contenedor">
+                <article class="card">
+                    <h3>Visión</h3>
+                    <p>"Nos visualizamos como líderes en la industria del contenido digital, impulsando la
+                        innovación tecnológica y la excelencia en diseño. Nuestra visión es ser reconocidos por
+                        nuestra capacidad para transformar ideas en soluciones digitales efectivas y de vanguardia.
+                        Aspiramos a ser el socio preferido de nuestros clientes, brindándoles un camino claro hacia
+                        el éxito en línea y contribuyendo al crecimiento sostenible de sus negocios en un mundo cada
+                        vez más digitalizado."</p>
+                </article>
+                <article class="card">
+                    <h3>Valores</h3>
+                    <p>"Nos fundamos en la creatividad, la innovación y la colaboración. Nos esforzamos por inspirar
+                        a través del diseño, abrazando la creatividad como motor de la excelencia. Valoramos la
+                        innovación constante, adaptándonos a las últimas tendencias tecnológicas para brindar
+                        soluciones de vanguardia. Fomentamos la colaboración estrecha con nuestros clientes, basada
+                        en la transparencia y la confianza mutua. La calidad, la ética y el compromiso con la
+                        satisfacción del cliente son la base de todo lo que hacemos."</p>
+                </article>
+            </section>
+
+            <section class="contenedor">
+                <article class="card">
+                    <h3>Ricardo</h3>
+                    <img src="assets/images//profile/profile-male (1).png" alt="Ricardo">
+                    <p>Diseñador</p>
+                </article>
+
+                <article class="card">
+                    <h3>Matías</h3>
+                    <img src="assets/images//profile/profile-male (2).png" alt="Matías">
+                    <p>Desarrollador</p>
+                </article>
+
+                <article class="card">
+                    <h3>Patricia</h3>
+                    <img src="assets/images//profile/profile-female (1).png" alt="Patricia">
+                    <p>Manager de producto</p>
+                </article>
+
+                <article class="card">
+                    <h3>Alan</h3>
+                    <img src="assets/images//profile/profile-male (3).png" alt="Alan">
+                    <p>Testing</p>
+                </article>
+
+                <article class="card">
+                    <h3>Eliana</h3>
+                    <img src="assets/images//profile/profile-female (2).png" alt="Eliana">
+                    <p>Quality Assurance</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <!-- Contacto -->
+    <div id="view4" class="view">
+        <hgroup class="heromain">
+            <h2>Envianos un mensaje</h2>
+        </hgroup>
+        <main>
+            <form class="form-card" id="form" method="post"
+                action="https://forms.un-static.com/forms/d1cd2a481fe1262f2a843294f323cf44e08b6af4">
+                <input type="text" name="name" id="name" placeholder="Tu nombre..." autocomplete="off" required>
+                <input type="email" id="email" name="email" placeholder="alguien@algo.com" autocomplete="off" required>
+                <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"
+                    required></textarea>
+                <button type="reset">Limpiar</button>
+                <button type="submit" class="g-recaptcha" data-sitekey="6Lf-ATMoAAAAAOCUXtiy7Kz5vN9LylYtowz43aIm
+            " data-callback='onSubmit' data-action='submit'>Enviar</button>
+            </form>
+        </main>
+    </div>
     <footer>
         <div class="footlist">
             <a class="footlink fa-brands fa-github fa-2x" href="https://github.com/matipretz/fullstackoeste"
@@ -95,8 +258,6 @@
             <a class="footlink fa-regular fa-envelope fa-2x" href="mailto:someone@example.com" title="Mail"
                 target="_blank"></a>
         </div>
-
-
 
         <ul>
             <li>
@@ -122,7 +283,7 @@
         </ul>
         </p>
     </footer>
-
+    <!-- SPA SCRIPT -->
+    <script src="assets/scripts/spa.js"></script>
 </body>
-
 </html>

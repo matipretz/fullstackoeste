@@ -194,7 +194,7 @@ main {
     color: var(--fondocolor);
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
 
 
 hr {
@@ -207,13 +207,13 @@ hr {
     color: var(--primario);
     transition-duration: 0.4s;
     width: 80px;
-    height: 80px;  
-  }
-  
-  .iconcard>img:hover {
+    height: 80px;
+}
+
+.iconcard>img:hover {
     transform: scale(1.4);
     transition-duration: 0.4s;
-  }
+}
 
 
 /* ///// CTA ///// */
@@ -319,4 +319,8 @@ button {
 button:hover {
     background-color: var(--fondocolor);
     transition-duration: 0.4s;
+}
+
+.view {
+    display: none;
 }
