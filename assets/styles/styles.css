@@ -28,7 +28,7 @@
   --boton: #101010;
   --texto: #101010;
   --textoclaro: #F0FFF0;
-  font-size: calc(15px + 0.390625vw);
+  font-size: calc(18px + 0.390625vw);
 }
 
 * {
@@ -362,5 +362,3 @@ button:hover {
 .ldio-lhtc1ypfhfm div {
   box-sizing: content-box;
 }
-
-/*# sourceMappingURL=styles.css.map */
