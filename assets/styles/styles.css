@@ -28,6 +28,7 @@
   --boton: #101010;
   --texto: #101010;
   --textoclaro: #F0FFF0;
+  font-size: calc(15px + 0.390625vw);
 }
 
 * {
@@ -52,7 +53,6 @@ body {
   min-width: 100vw;
   overflow-x: hidden;
   scrollbar-width: none;
-  font-size: calc(15px + 0.390625vw);
 }
 
 
