@@ -1,3 +1,1 @@
-- Fuentes Responsive
 - Verif FORM
-- Scale Media Query
