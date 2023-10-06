@@ -11,26 +11,26 @@ const query = [
     'python',
     'flask',
 ];
-
 const simpleAPI = 'https://cdn.simpleicons.org/'
 
-function crearListaURLs() {
-    const listaURLs = query.map(item => `${simpleAPI}${item}`);
-    return listaURLs;
+function createIconList() {
+    const list = query.map(item => `${simpleAPI}${item}`);
+    return list;
 }
-const listaURLs = crearListaURLs();
+iconList = createIconList()
 
-console.log(listaURLs);
 
-// Obtener el contenedor donde deseas agregar las imágenes
-const contenedor = document.getElementById('contenedor-imagenes');
+function renderizarImagenes() {
+    const contenedor = document.getElementById("contenedorImg"); // Asegúrate de tener un elemento en tu HTML con el id "contenedor"
 
-// Iterar sobre la lista de URLs y crear elementos img
-listaURLs.forEach(url => {
-    const imagen = document.createElement('img');
-    imagen.src = url;
-    imagen.alt = 'Logo';
+    iconList.forEach(ruta => {
+        const nuevaImagen = document.createElement("img");
+        nuevaImagen.src = ruta;
+        nuevaImagen.style.width = "80px";
+        nuevaImagen.style.height = "80px";
+        contenedorImg.appendChild(nuevaImagen);
+    });
+}
 
-    // Agregar la imagen al contenedor
-    contenedor.appendChild(imagen);
-});
+// Ejecutar la función cuando el DOM esté cargado
+document.addEventListener("DOMContentLoaded", renderizarImagenes);
