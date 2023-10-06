@@ -25,7 +25,7 @@
 - Público: Todo aquel que necesite desarrollar una solución web.
 
 ## 3. Estructura del Sitio:
-- Portada/Home
+- Home
 - Servicios
 - Nosotros
 - Contacto
