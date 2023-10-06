@@ -1,60 +1,76 @@
+@font-face {
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWg2.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Pridi;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/pridi/v13/2sDQZG5JnZLfkcWdqW0.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Chivo Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/chivomono/v9/mFThWbgRxKvF_Z5eQMO9qRMrJJrnKNtC3D7hr5fSIJw.ttf) format('truetype')
+}
+
 :root {
-    /* FUENTES */
     --titulo: Orbitron;
     --subtitulo: Pridi;
     --parrafo: Chivo Mono;
-
-    /* COLORES */
     --fondoprimario: #252525;
     --fondocolor: #004643;
     --boton: #101010;
     --texto: #101010;
-    --textoclaro: #F0FFF0;
+    --textoclaro: #F0FFF0
 }
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #fff;
     -ms-overflow-style: none;
-    scrollbar-width: none;
-
+    scrollbar-width: none
 }
 
 html::-webkit-scrollbar {
-    display: none;
+    display: none
 }
 
 body {
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
-    scrollbar-width: none;
+    scrollbar-width: none
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
-/* ///// NAV ///// */
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1
 }
 
 .navlist {
     width: 100vw;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
 }
 
 .navlink {
@@ -66,33 +82,27 @@ a {
     font-weight: 100;
     height: 2rem;
     align-content: center;
-    transition-duration: 0.4s;
-
+    transition-duration: .4s
 }
 
 .navlink:hover {
-    transition-duration: 0.4s;
-    background-color: var(--fondocolor);
+    transition-duration: .4s;
+    background-color: var(--fondocolor)
 }
 
-.navlink.active {
-    background-color: var(--fondocolor);
-}
-
-/* ///// HERO ///// */
 .hero {
     position: static;
     display: flex;
     height: 65vh;
     width: 100vw;
-    justify-content: center;
+    justify-content: center
 }
 
 .heroheader {
     font-family: var(--titulo);
     font-weight: 900;
     align-self: center;
-    color: var(--texto);
+    color: var(--texto)
 }
 
 .backvid {
@@ -103,21 +113,20 @@ a {
     min-height: 100%;
     z-index: -1;
     overflow: hidden;
-    opacity: 0.6;
+    opacity: .6
 }
 
-/* ///// MAIN HEADER ///// */
 .heromain {
     position: static;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--fondoprimario);
-    width: 100%;
+    width: 100%
 }
 
 .heromain>* {
-    width: 70%;
+    width: 70%
 }
 
 .heromain h2 {
@@ -126,7 +135,7 @@ a {
     font-weight: 900;
     text-align: center;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem
 }
 
 .heromain h3 {
@@ -135,18 +144,17 @@ a {
     font-weight: 400;
     text-align: center;
     padding-bottom: 5rem;
-    line-height: 4rem;
+    line-height: 4rem
 }
 
-/* ///// MAIN ///// */
 main {
-    background-color: var(--fondoprimario);
+    background-color: var(--fondoprimario)
 }
 
 .contenedor {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
 }
 
 .card {
@@ -156,67 +164,63 @@ main {
     border-radius: 5px;
     justify-self: center;
     margin-bottom: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-    opacity: 0.8;
-    background-color: var(--boton);
+    box-shadow: rgba(0, 0, 0, .19) 0 10px 20px, rgba(0, 0, 0, .23) 0 6px 6px;
+    opacity: .8;
+    background-color: var(--boton)
 }
 
 .card:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 .card img {
     justify-self: center;
-    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    box-shadow: rgba(0, 0, 0, .19) 0 10px 20px, rgba(0, 0, 0, .23) 0 6px 6px;
     margin: 1rem 2rem 0 2rem;
     background-color: var(--fondocolor);
-    max-width: 80%;
+    max-width: 80%
 }
 
 .card h3 {
     padding: 1rem 0 0 0;
     font-family: var(--subtitulo);
     color: var(--textoclaro);
-    justify-self: center;
+    justify-self: center
 }
 
 .card p {
     margin: 1rem 2rem 1rem 2rem;
     font-family: var(--parrafo);
     color: var(--textoclaro);
-    justify-self: center;
+    justify-self: center
 }
 
-/* ///// ICON CARDS ///// */
 .iconcard {
     display: flex;
     gap: 1rem;
     color: var(--fondocolor);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center
 }
-
 
 hr {
     margin: 3rem 0 0 0;
-    width: 100%;
+    width: 100%
 }
 
 .iconcard>img {
     display: flex;
     color: var(--primario);
-    transition-duration: 0.4s;
+    transition-duration: .4s;
     width: 80px;
-    height: 80px;
+    height: 80px
 }
 
 .iconcard>img:hover {
     transform: scale(1.4);
-    transition-duration: 0.4s;
+    transition-duration: .4s
 }
 
-
-/* ///// CTA ///// */
 .cta {
     position: static;
     display: grid;
@@ -227,38 +231,36 @@ hr {
     color: var(--textoclaro);
     gap: 3rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem
 }
 
 .cta h3 {
     font-family: var(--subtitulo);
-    color: var(--textoclaro);
-
+    color: var(--textoclaro)
 }
 
 .cta p {
-    font-family: var(--parrafo);
+    font-family: var(--parrafo)
 }
 
 .cta h2 {
-    font-family: var(--subtitulo);
+    font-family: var(--subtitulo)
 }
 
-/* ///// FOOTER ///// */
 footer {
     position: static;
     display: grid;
     align-content: center;
     width: 100%;
     text-align: center;
-    background-color: var(--boton);
+    background-color: var(--boton)
 }
 
-footer p,
-footer a {
+footer a,
+footer p {
     color: var(--textoclaro);
     font-family: var(--parrafo);
-    padding-bottom: 1rem;
+    padding-bottom: 1rem
 }
 
 .footlink {
@@ -266,16 +268,15 @@ footer a {
     padding-top: 1rem;
     margin-left: 2rem;
     color: var(--fondocolor);
-    transition-duration: 0.4s;
+    transition-duration: .4s
 }
 
 .footlink:hover {
     color: var(--textoclaro);
     transform: scale(1.4);
-    transition-duration: 0.4s;
+    transition-duration: .4s
 }
 
-/* ///// FORM ///// */
 .form-card {
     position: static;
     display: flex;
@@ -284,21 +285,21 @@ footer a {
     background-color: var(--fondoprimario);
     padding-bottom: 5rem;
     align-content: center;
-    justify-items: center;
+    justify-items: center
 }
 
 .form-card>input,
 .form-card>textarea {
     width: 90%;
     font-family: var(--parrafo);
-    margin: 1rem;
+    margin: 1rem
 }
 
 input,
 textarea {
     border-radius: 4px;
     resize: vertical;
-    padding: 1rem;
+    padding: 1rem
 }
 
 button {
@@ -313,40 +314,38 @@ button {
     cursor: pointer;
     width: 7rem;
     text-align: center;
-    transition-duration: 0.4s;
+    transition-duration: .4s
 }
 
 button:hover {
     background-color: var(--fondocolor);
-    transition-duration: 0.4s;
+    transition-duration: .4s
 }
 
-/* SPA VIEW */
 .view {
-    display: none;
+    display: none
 }
 
-/* LOADER */
 #loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, .8);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9999
 }
 
 @keyframes ldio-lhtc1ypfhfm {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0)
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg)
     }
 }
 
@@ -357,7 +356,7 @@ button:hover {
     height: 120px;
     border: 20px solid #727a7e;
     border-top-color: transparent;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .ldio-lhtc1ypfhfm div {
@@ -370,7 +369,7 @@ button:hover {
     width: 200px;
     height: 200px;
     display: inline-block;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .ldio-lhtc1ypfhfm {
@@ -379,9 +378,9 @@ button:hover {
     position: relative;
     transform: translateZ(0) scale(1);
     backface-visibility: hidden;
-    transform-origin: 0 0;
+    transform-origin: 0 0
 }
 
 .ldio-lhtc1ypfhfm div {
-    box-sizing: content-box;
+    box-sizing: content-box
 }
