@@ -66,6 +66,7 @@
 
 ## Links:
 - [Contacto](mailto:contact.me@altmails.com?subject=[FSO])
+- [Repo](https://github.com/matipretz/fullstackoeste)
 - [Sitio](https://matipretz.github.io/fullstackoeste)
 - [Paleta de colores](https://coolors.co/visualizer/252525-004643-101010-F0FFF0)
 
