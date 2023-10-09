@@ -362,3 +362,9 @@ button:hover {
 .ldio-lhtc1ypfhfm div {
   box-sizing: content-box;
 }
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

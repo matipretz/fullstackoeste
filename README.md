@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://matipretz.github.io/fullstackoeste"><h1>Full Stack Oeste - TPO - CaC 4.0 Q2 - Com 23542</h1></a>
-    <img alt="bac logo" src="assets/images/readme/logo-CAC.webp" width="200px" />
-    <img alt="cac logo" src="assets/images/readme/bac.png" width="400" />  
+    <img alt="bac logo" src="assets/images/readme/logo-CAC.png" height="100px" />
+    <img alt="cac logo" src="assets/images/readme/bac.png" height="100px" />  
 </div>
 
 ## Menú
@@ -42,12 +42,13 @@
 ### CSS: 
 - Se utiliza ampliamente un sistema sencillo de variables para determinar la paleta de colores y las fuentes.
 ### Scripts:
-- Simpleicons: Simulamos el consumo de una API, primero componiendo un arreglo con rutas de iconos (tomando una ruta base y "mapeando" una lista) y luego renderizando una serie de iconos dispuestos en un grid responsivo.
-- Loader: Tomamos el CSS y el HTML de un loader que se muestra por sobre toda la pagina y se oculta cuando termina de cargar el DOM.
+- createIconLis: Simulamos el consumo de una API, primero componiendo un arreglo con rutas de iconos (tomando una ruta base y "mapeando" una lista) y luego renderizando una serie de iconos dispuestos en un grid responsivo.
+- loader: Tomamos el CSS y el HTML de un loader que se muestra por sobre toda la pagina y se oculta cuando termina de cargar el DOM.
 - viewShow: Es el script que muestra y oculta las vistas. Dada su extension se encuentra documentado en assets/scripts/scripts.js
+- submit: Previene el comportamiento predefinido y verifica el campo de nombre y un patron en el campo de mail. Si obriene true && true, dispara un aler y envia el formulario a UnStatic.
 ### Formulario de contacto:
-- Integra [UnStatic](https://forms.un-static.com/), un controlador de correo que remite el formulario sin exponer la casilla.
-- Ingegra [reCaptcha](https://www.google.com/recaptcha/about/), el servicio de google que evita rastreo de bots y potencial spam.
+- Integra [UnStatic](https://forms.un-static.com/), un servicio controlador de correo que remite el formulario sin exponer la casilla.
+- A pesar de que se cuenta con validacion incorporada, se opto por utilizar un script estandar para validar las casillas de nombre y de correo.
 
 ## Integrantes del Equipo:
 - [Matias Martin Murad Pretz](https://www.linkedin.com/in/matiasmurad/) (representante)
@@ -61,7 +62,7 @@
 - [storyset](https://storyset.com/): Ilustraciones vectorizadas utilizadas en el home.
 - [Google Fonts](https://fonts.google.com/): Importamos las familias Orbitron, Pridi y Chivo Mono.
 - [metatags.io](https://metatags.io/): Genera meta-tags de forma automatica.
-- [simpleiconso](https://simpleicons.org/): Iconos vectorizados.
+- [simpleicons](https://simpleicons.org/): Iconos vectorizados.
 
 
 ## Links:

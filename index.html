@@ -4,20 +4,17 @@
     <!-- Meta -->
     <title>Full Stack Oeste</title>
     <meta name="title" content="Full Stack Oeste" />
-    <meta name="description" content="Este es el Trabajo Practico Obligatorio de Codo a Codo 4.0 de la comisión 23542." />
-    <meta name="robots" content="index,follow">
+    <meta name="description"
+        content="Este es el Trabajo Practico Obligatorio de Codo a Codo 4.0 de la comisión 23542." />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/styles/styles.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <!-- Scripts -->
     <script src="assets/scripts/prefixfree.js"></script>
     <script src="https://kit.fontawesome.com/6793cb11db.js" crossorigin="anonymous"></script>
-    <script src="assets/scripts/recaptcha.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <!-- LOADER -->
@@ -208,13 +205,14 @@
         <main>
             <form class="form-card" id="form" method="post"
                 action="https://forms.un-static.com/forms/d1cd2a481fe1262f2a843294f323cf44e08b6af4">
-                <input type="text" name="name" id="name" placeholder="Tu nombre..." autocomplete="off" required>
-                <input type="email" id="email" name="email" placeholder="alguien@algo.com" autocomplete="off" required>
+                <input type="text" id="name" placeholder="Tu nombre..." autocomplete="off">
+                <div class="error-message" id="nameError"></div>
+                <input type="text" id="email" placeholder="alguien@algo.com" autocomplete="off" >
+                <div class="error-message" id="emailError"></div>
                 <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"
-                    required></textarea>
+                    ></textarea>
                 <button type="reset">Limpiar</button>
-                <button type="submit" class="g-recaptcha" data-sitekey="6Lf-ATMoAAAAAOCUXtiy7Kz5vN9LylYtowz43aIm
-            " data-callback='onSubmit' data-action='submit'>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </main>
     </div>
