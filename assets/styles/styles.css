@@ -2,11 +2,11 @@
   --titulo: Orbitron;
   --subtitulo: Noto Sans Display;
   --parrafo: Noto Sans Display;
-  --fondoprimario: #abcb9d;
-  --fondocolor: #00b8af;
-  --boton: #eeeeee;
+  --fondoprimario: #252525;
+  --fondocolor: #004643;
+  --boton: #101010;
   --texto: #101010;
-  --textosecundario: #101010;
+  --textosecundario: #F0FFF0;
   font-size: calc(18px + 0.390625vw);
 }
 

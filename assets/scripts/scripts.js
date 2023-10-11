@@ -61,10 +61,6 @@ document.addEventListener('DOMContentLoaded', function () { //Esta función mues
 
 });
 
-
-
-
-
 // Agrega un event listener para escuchar cuando se envía el formulario
 document.getElementById('form').addEventListener('submit', (event) => {
     // Previene el comportamiento predeterminado de enviar el formulario
@@ -104,7 +100,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
+    if (theme === "light") {
         toggleTheme()
     }
 });
@@ -114,15 +110,15 @@ document.getElementById('toggler').addEventListener('click', toggleTheme);
 function toggleTheme() {
     const head = document.querySelector("head");
     const toggler = document.createElement("link");
-    toggler.href = "assets/styles/dark.css";
+    toggler.href = "assets/styles/light.css";
     toggler.rel = "stylesheet";
-    toggler.id = "darkMode";
+    toggler.id = "lightMode";
 
-    if (!!document.getElementById("darkMode")) {
-        head.removeChild(document.getElementById("darkMode"));
+    if (!!document.getElementById("lightMode")) {
+        head.removeChild(document.getElementById("lightMode"));
         localStorage.setItem("theme", "light");
     } else {
         head.append(toggler);
-        localStorage.setItem("theme", "dark");
+        localStorage.setItem("theme", "light");
     }
 }
