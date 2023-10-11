@@ -23,11 +23,11 @@
   --titulo: Orbitron;
   --subtitulo: Pridi;
   --parrafo: Chivo Mono;
-  --fondoprimario: #252525;
-  --fondocolor: #004643;
-  --boton: #101010;
+  --fondoprimario: #abcb9d;
+  --fondocolor: #00b8af;
+  --boton: #eeeeee;
   --texto: #101010;
-  --textoclaro: #F0FFF0;
+  --textosecundario: #101010;
   font-size: calc(18px + 0.390625vw);
 }
 
@@ -55,6 +55,12 @@ body {
   scrollbar-width: none;
 }
 
+#toggler:hover{
+cursor: pointer;
+scale: 1.05;
+transition-duration: 0.4s;
+transition-timing-function: ease-in-out;
+}
 
 a {
   text-decoration: none;
@@ -79,7 +85,7 @@ a {
   display: grid;
   text-align: center;
   background-color: var(--boton);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   font-family: var(--parrafo);
   font-weight: 100;
   height: 2rem;
@@ -156,14 +162,14 @@ main {
 .card h3 {
   padding: 1rem 0 0 0;
   font-family: var(--subtitulo);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   justify-self: center;
 }
 
 .card p {
   margin: 1rem 2rem 1rem 2rem;
   font-family: var(--parrafo);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   justify-self: center;
   text-align: center;
 }
@@ -200,7 +206,7 @@ hr {
   align-content: center;
   text-align: center;
   background-color: var(--fondoprimario);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   gap: 3rem;
 
   padding-top: 3rem;
@@ -209,7 +215,7 @@ hr {
 
 .heromain h3 {
   font-family: var(--subtitulo);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   margin: auto;
   width: 70%;
 
@@ -238,7 +244,7 @@ footer {
 
 footer a,
 footer p {
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   font-family: var(--parrafo);
   padding-bottom: 1rem;
 }
@@ -252,7 +258,7 @@ footer p {
 }
 
 .footlink:hover {
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   transform: scale(1.4);
   transition-duration: 0.4s;
 }
@@ -287,7 +293,7 @@ button {
   margin: 1rem;
   display: inline-block;
   background-color: var(--boton);
-  color: var(--textoclaro);
+  color: var(--textosecundario);
   font-family: var(--parrafo);
   padding: 1rem;
   border: none;

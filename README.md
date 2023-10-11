@@ -45,7 +45,8 @@
 - createIconLis: Simulamos el consumo de una API, primero componiendo un arreglo con rutas de iconos (tomando una ruta base y "mapeando" una lista) y luego renderizando una serie de iconos dispuestos en un grid responsivo.
 - loader: Tomamos el CSS y el HTML de un loader que se muestra por sobre toda la pagina y se oculta cuando termina de cargar el DOM.
 - viewShow: Es el script que muestra y oculta las vistas. Dada su extension se encuentra documentado en assets/scripts/scripts.js
-- submit: Previene el comportamiento predefinido y verifica el campo de nombre y un patron en el campo de mail. Si obriene true && true, dispara un aler y envia el formulario a UnStatic.
+- submit: Previene el comportamiento predefinido y verifica el campo de nombre y un patron en el campo de mail. Si obtiene true && true, dispara un alert y envia el formulario a UnStatic.
+- toggler: Este script apendiza un archivo CSS en el head del documento. Incluye estilos que pisan los colores por defecto, logrando cambiar el tema. Se vale de local storage para persistir la eleccion del usuario a tra vez de las sesiones. En lugar de un boton fisico se opto por implementar un listener en la cabecera principal.
 ### Formulario de contacto:
 - Integra [UnStatic](https://forms.un-static.com/), un servicio controlador de correo que remite el formulario sin exponer la casilla.
 - A pesar de que se cuenta con validacion incorporada, se opto por utilizar un script estandar para validar las casillas de nombre y de correo.
