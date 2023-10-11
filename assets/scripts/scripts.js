@@ -47,24 +47,17 @@ document.addEventListener('DOMContentLoaded', function () { //Esta función mues
         document.getElementById(id).style.display = 'block'; // Mostrar la vista con el ID proporcionado
     };
     // Asignar eventos de clic a los enlaces de vista:
-    document.getElementById('viewlink1').addEventListener('click', function () {
-        viewShow('view1');
-    });
-    document.getElementById('viewlink2').addEventListener('click', function () {
-        viewShow('view2');
-    });
-    document.getElementById('viewlink3').addEventListener('click', function () {
-        viewShow('view3');
-    });
-    document.getElementById('viewlink4').addEventListener('click', function () {
-        viewShow('view4');
-    });
-    document.getElementById('viewlink0').addEventListener('click', function () {
-        viewShow('view4');
-    });
+    for (let i = 0; i <= 4; i++) {
+        document.getElementById(`viewlink${i}`).addEventListener('click', function () {
+            viewShow(`view${i === 0 ? 4 : i}`);
+        });
+    }    
     // Mostrar la primera vista por defecto
-    viewShow('view1');
+    viewShow('view1');    
 });
+
+
+
 
 
 // Agrega un event listener para escuchar cuando se envía el formulario

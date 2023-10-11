@@ -1,28 +1,7 @@
-@font-face {
-  font-family: Orbitron;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWg2.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Pridi;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/pridi/v13/2sDQZG5JnZLfkcWdqW0.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Chivo Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/chivomono/v9/mFThWbgRxKvF_Z5eQMO9qRMrJJrnKNtC3D7hr5fSIJw.ttf) format("truetype");
-}
-
 :root {
   --titulo: Orbitron;
-  --subtitulo: Pridi;
-  --parrafo: Chivo Mono;
+  --subtitulo: Noto Sans Display;
+  --parrafo: Noto Sans Display;
   --fondoprimario: #abcb9d;
   --fondocolor: #00b8af;
   --boton: #eeeeee;
@@ -55,11 +34,11 @@ body {
   scrollbar-width: none;
 }
 
-#toggler:hover{
-cursor: pointer;
-scale: 1.05;
-transition-duration: 0.4s;
-transition-timing-function: ease-in-out;
+#toggler:hover {
+  cursor: pointer;
+  scale: 1.05;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 a {

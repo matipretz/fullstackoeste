@@ -29,7 +29,7 @@
 
 ## Diseño y Estilo:
 - Estilo visual: Relajado, moderno y tecnológico.
-- Colores: Blanco, grises y verdes.
+- Colores: Nuestra paleta se basa en colores claros acompañados de elementos blancos, para transmitir frescura y amabilidad. Adoptamos un tema alternativo oscuro con una combinación predominante de negro y grises, equilibrado con elementos llamativos y tonos claros. 
 - Tipografía: Fuente estilizada en titulares y cabeceras, Sans-serif para una legibilidad óptima en textos de cuerpo.
 
 ## Contenido y Funcionalidades:
