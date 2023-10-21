@@ -430,3 +430,7 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+#citas>p{
+  font-size: 0.5rem;
+}
