@@ -32,13 +32,7 @@ body {
   min-width: 100vw;
   overflow-x: hidden;
   scrollbar-width: none;
-}
-
-#toggler:hover {
-  cursor: pointer;
-  scale: 1.05;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-in-out;
+  user-select: none;
 }
 
 a {
@@ -352,4 +346,65 @@ button:hover {
   color: red;
   font-size: 12px;
   margin-top: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: fixed;
+  width: 60px;
+  height: 34px;
+  bottom:40px;
+	right:40px;  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

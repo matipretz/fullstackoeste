@@ -19,12 +19,12 @@ function createIconList() { // Compone un arreglo para cada icono en la lista
 }
 iconList = createIconList() // Lista de rutas de iconos
 
-function renderizarImagenes() { // Renderiza un icono con sus parametros por cada rutas c
+function renderizarImagenes() { // Renderiza un icono con sus parametros por cada rutas
     const contenedor = document.getElementById("contenedorImg"); // Apunta al div donde se van a renderizar los iconos
     iconList.forEach(ruta => { // Por cada ruta en el arrego...
         const nuevaImagen = document.createElement("img"); // Crea un elemento img...
         nuevaImagen.src = ruta; // Le da el src de la iteracion del arreglo llamada ruta
-        const query = ruta.split("/")[3]; // Obtiene la query origina desde la ruta
+        const query = ruta.split("/")[3]; // Obtiene la query original desde la ruta
         nuevaImagen.alt = query; // Le da atributo alt
         nuevaImagen.title = query; // Le da atributo title
         nuevaImagen.style.width = "80px"; //Le da ancho
@@ -32,8 +32,7 @@ function renderizarImagenes() { // Renderiza un icono con sus parametros por cad
         contenedor.appendChild(nuevaImagen); // Apendiza el elemento creado
     });
 }
-// Ejecutar la función cuando el DOM esté cargado
-document.addEventListener("DOMContentLoaded", renderizarImagenes);
+document.addEventListener("DOMContentLoaded", renderizarImagenes);// Ejecutar la función cuando el DOM esté cargado
 
 // Esconder el Loader
 document.getElementById('loader').style.display = 'none';
@@ -104,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleTheme()
     }
 });
-document.getElementById('toggler').addEventListener('click', toggleTheme);
 
 
 function toggleTheme() {
@@ -116,7 +114,7 @@ function toggleTheme() {
 
     if (!!document.getElementById("lightMode")) {
         head.removeChild(document.getElementById("lightMode"));
-        localStorage.setItem("theme", "light");
+        localStorage.setItem("theme", "dark");
     } else {
         head.append(toggler);
         localStorage.setItem("theme", "light");
