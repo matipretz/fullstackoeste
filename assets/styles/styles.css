@@ -105,23 +105,22 @@ main {
 .contenedor {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .card {
   display: grid;
   width: 85%;
-  grid-template-rows: repeat(3);
   border-radius: 5px;
   justify-self: center;
   margin-bottom: 3rem;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: var(--boton);
 }
 
 .card:hover {
-  opacity: 1;
+  opacity: 2;
 }
 
 .card img {
@@ -145,6 +144,17 @@ main {
   color: var(--textosecundario);
   justify-self: center;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 70%;
+    margin-bottom: 5rem;
+  }
 }
 
 .iconcard {
@@ -353,8 +363,8 @@ button:hover {
   position: fixed;
   width: 60px;
   height: 34px;
-  bottom:40px;
-	right:40px;  
+  bottom: 40px;
+  right: 40px;
 }
 
 /* Hide default HTML checkbox */
