@@ -2,11 +2,11 @@
   --titulo: Orbitron;
   --subtitulo: Noto Sans Display;
   --parrafo: Noto Sans Display;
-  --fondoprimario: #252525;
+  --fondoprimario: #161b22;
   --fondocolor: #004643;
-  --boton: #101010;
+  --boton: #21262d;
   --texto: #101010;
-  --textosecundario: #F0FFF0;
+  --textosecundario: #f0f6fc;
   font-size: calc(18px + 0.390625vw);
 }
 
@@ -108,6 +108,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+
 .card {
   display: grid;
   width: 85%;
@@ -115,13 +116,10 @@ main {
   justify-self: center;
   margin-bottom: 3rem;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-  opacity: 0.7;
   background-color: var(--boton);
 }
 
-.card:hover {
-  opacity: 2;
-}
+
 
 .card img {
   justify-self: center;
@@ -129,6 +127,8 @@ main {
   margin: 1rem 2rem 0 2rem;
   background-color: var(--fondocolor);
   max-width: 80%;
+  opacity: 0.1;
+  transition-duration: 500ms;
 }
 
 .card h3 {
@@ -144,7 +144,19 @@ main {
   color: var(--textosecundario);
   justify-self: center;
   text-align: center;
+  opacity: 0.1;
+  transition-duration: 500ms;
 }
+
+
+.card:hover>p,
+.card:hover>img {
+  opacity: 2;
+  transition-duration: 500ms;
+}
+
+
+
 
 @media (max-width: 1300px) {
   .contenedor {
@@ -382,7 +394,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #004643;
   transition: .4s;
 }
 
@@ -398,11 +410,11 @@ button:hover {
 }
 
 input:checked+.slider {
-  background-color: #2196F3;
+  background-color: #56d364;
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #004643;
 }
 
 input:checked+.slider:before {
