@@ -69,41 +69,46 @@ H. [Links](#links)
 ### CSS: 
 - Se utiliza ampliamente un sistema sencillo de variables para determinar la paleta de colores y las fuentes.
 ### Scripts:
-#### createIconList: 
-Simulamos el consumo de una API, primero componiendo un arreglo con rutas de iconos (tomando una ruta base y "mapeando" una lista) y luego renderizando una serie de iconos dispuestos en un grid responsivo.
-#### loader: 
-Tomamos el CSS y el HTML de un loader que se muestra por sobre toda la pagina y se oculta cuando termina de cargar el DOM.
-#### viewShow: 
-Es el script que muestra y oculta las vistas. Dada su extension se encuentra documentado en assets/scripts/scripts.js
-#### submit: 
-Previene el comportamiento predefinido y verifica el campo de nombre y un patron en el campo de mail. Si obtiene true && true, dispara un alert y envia el formulario a UnStatic.
-#### toggler: 
-Este script apendiza un archivo CSS en el head del documento. Incluye estilos que pisan los colores por defecto, logrando cambiar el tema. Se vale de local storage para persistir la eleccion del usuario a tra vez de las sesiones. En lugar de un boton fisico se opto por implementar un listener en la cabecera principal.
-#### quotes:
-DOCUMENTAR
+- #### createIconList: 
+    Simulamos el consumo de una API, primero componiendo un arreglo con rutas de iconos (tomando una ruta base y "mapeando" una lista) y luego renderizando una serie de iconos dispuestos en un grid responsivo.
+- #### loader: 
+    Tomamos el CSS y el HTML de un loader que se muestra por sobre toda la pagina y se oculta cuando termina de cargar el DOM.
+- #### viewShow: 
+    Es el script que muestra y oculta las vistas para lograr una aplicacion de una sola pagina (SPA). 
+- #### submit: 
+    Previene el comportamiento predefinido y verifica el campo de nombre y un patron en el campo de mail. Si obtiene true && true, dispara un alert y envia el formulario a UnStatic.
+- #### toggler: 
+    Este script apendiza un archivo CSS en el head del documento. Incluye estilos que pisan los colores por defecto, logrando cambiar el tema. Se vale de local storage para persistir la eleccion del usuario a tra vez de las sesiones. Se activa por medio de un checkbox estilizado como slider.
+- #### quotes:
+    Tomamos una base de datos de citas relacionadas a la computacíon y la subimos a firebase para interactuar con ella por medio de el metodo GET de API REST para renderizar una marquesina que muestra las citas junto con su autor de forma alternativa y al azar.
 ### Formulario de contacto:
 - Integra [UnStatic](https://forms.un-static.com/), un servicio controlador de correo que remite el formulario sin exponer la casilla.
 - A pesar de que se cuenta con validacion incorporada, se opto por utilizar un script estandar para validar las casillas de nombre y de correo.
 
 ## Integrantes del Equipo:
 - [Matias Martin Murad Pretz](https://www.linkedin.com/in/matiasmurad/) (representante)
-- Patricia Feltan
 - Ricardo Torales
 - Eliana Balbuena
   
 ## Recursos Adicionales:
 - [prefixfree](https://github.com/LeaVerou/prefixfree): Ofrece la mayor compatibilidad posible con el motor webkit.
-- [fontawesome](https://fontawesome.com/): Resuelve los iconos utilizados en el footer.
-- [storyset](https://storyset.com/): Ilustraciones vectorizadas utilizadas en el home.
-- [Google Fonts](https://fonts.google.com/): Importamos las familias Orbitron, Pridi y Chivo Mono.
-- [metatags.io](https://metatags.io/): Genera meta-tags de forma automatica.
-- [simpleicons](https://simpleicons.org/): Iconos vectorizados.
-
+- [Favicon](https://favicon.io/): Generador de favicon.
+- [FontAwesome](https://fontawesome.com/): Resuelve los iconos utilizados en el footer.
+- [Dall-E](https://openai.com/dall-e-2): Generamos avatares para las tarjetas de los miembros.
+- [StorySet](https://storyset.com/): Ilustraciones vectorizadas utilizadas en el home.
+- [Google Fonts](https://fonts.google.com/): Importamos las familias Orbitron y Noto Sans Display.
+- [MetaTags.io](https://metatags.io/): Genera meta-tags de forma automatica.
+- [SimpleIcons](https://simpleicons.org/): Iconos vectorizados.
+- [javaScript-Minifier](https://www.toptal.com/developers/javascript-minifier/): Minificado de JS.
+- [PurifyCSS](https://purifycss.online/): Limpiador de CSS
+- [Tinypng](https://tinypng.com/): Compresor de imagenes.
+- [Firebase](https://firebase.google.com/): Alojamiento de JSON.
+- [Adobe Express SVG](https://new.express.adobe.com/tools/convert-to-svg)
 
 ## Links:
-- [Contacto](mailto:contact.me@altmails.com?subject=[FSO])
-- [Repo](https://github.com/matipretz/fullstackoeste)
+- [Contacto](mailto:mati.pretz+dev@googlemail.com?subject=[FSO])
+- [Repositorio](https://github.com/matipretz/fullstackoeste)
 - [Sitio](https://matipretz.github.io/fullstackoeste)
-- [Paleta de colores](https://coolors.co/visualizer/252525-004643-101010-F0FFF0)
+- [Paleta de colores](https://coolors.co/visualizer/161B22-004643-101010-21262D)
 
 ### [<svg height="1rem" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM135.1 217.4c-4.5 4.2-7.1 10.1-7.1 16.3c0 12.3 10 22.3 22.3 22.3H208v96c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V256h57.7c12.3 0 22.3-10 22.3-22.3c0-6.2-2.6-12.1-7.1-16.3L269.8 117.5c-3.8-3.5-8.7-5.5-13.8-5.5s-10.1 2-13.8 5.5L135.1 217.4z" fill="grey"/></svg> Subir](#menú)

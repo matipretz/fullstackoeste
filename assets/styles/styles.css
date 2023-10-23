@@ -7,12 +7,12 @@
   --boton: #21262d;
   --texto: #101010;
   --textosecundario: #f0f6fc;
-  font-size: calc(18px + 0.390625vw);
+  font-size: calc(18px + .390625vw)
 }
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 html {
@@ -20,11 +20,11 @@ html {
   box-sizing: border-box;
   background-color: #fff;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: none
 }
 
 html::-webkit-scrollbar {
-  display: none;
+  display: none
 }
 
 body {
@@ -32,11 +32,11 @@ body {
   min-width: 100vw;
   overflow-x: hidden;
   scrollbar-width: none;
-  user-select: none;
+  user-select: none
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .navbar {
@@ -44,14 +44,14 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1
 }
 
 .navlist {
   width: 100vw;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
 }
 
 .navlink {
@@ -63,12 +63,12 @@ a {
   font-weight: 100;
   height: 2rem;
   align-content: center;
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 .navlink:hover {
-  transition-duration: 0.4s;
-  background-color: var(--fondocolor);
+  transition-duration: .4s;
+  background-color: var(--fondocolor)
 }
 
 .hero {
@@ -76,14 +76,14 @@ a {
   display: flex;
   height: 65vh;
   width: 100vw;
-  justify-content: center;
+  justify-content: center
 }
 
 .heroheader {
   font-family: var(--titulo);
   font-weight: 900;
   align-self: center;
-  color: var(--texto);
+  color: var(--texto)
 }
 
 .backvid {
@@ -94,20 +94,19 @@ a {
   min-height: 100%;
   z-index: -1;
   overflow: hidden;
-  opacity: 0.6;
+  opacity: .6
 }
 
 main {
   background-color: var(--fondoprimario);
-  padding: 2rem;
+  padding: 2rem
 }
 
 .contenedor {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
 }
-
 
 .card {
   display: grid;
@@ -115,27 +114,25 @@ main {
   border-radius: 5px;
   justify-self: center;
   margin-bottom: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-  background-color: var(--boton);
+  box-shadow: rgba(0, 0, 0, .19) 0 10px 20px, rgba(0, 0, 0, .23) 0 6px 6px;
+  background-color: var(--boton)
 }
-
-
 
 .card img {
   justify-self: center;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  box-shadow: rgba(0, 0, 0, .19) 0 10px 20px, rgba(0, 0, 0, .23) 0 6px 6px;
   margin: 1rem 2rem 0 2rem;
   background-color: var(--fondocolor);
   max-width: 80%;
-  opacity: 0.1;
-  transition-duration: 500ms;
+  opacity: .1;
+  transition-duration: .5s
 }
 
 .card h3 {
   padding: 1rem 0 0 0;
   font-family: var(--subtitulo);
   color: var(--textosecundario);
-  justify-self: center;
+  justify-self: center
 }
 
 .card p {
@@ -144,28 +141,24 @@ main {
   color: var(--textosecundario);
   justify-self: center;
   text-align: center;
-  opacity: 0.1;
-  transition-duration: 500ms;
+  opacity: .1;
+  transition-duration: .5s
 }
 
-
-.card:hover>p,
-.card:hover>img {
+.card:hover>img,
+.card:hover>p {
   opacity: 2;
-  transition-duration: 500ms;
+  transition-duration: .5s
 }
 
-
-
-
-@media (max-width: 1300px) {
+@media (max-width:1300px) {
   .contenedor {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr
   }
 
   .card {
     width: 70%;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem
   }
 }
 
@@ -174,25 +167,25 @@ main {
   gap: 1rem;
   color: var(--fondocolor);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center
 }
 
 hr {
   margin: auto;
-  width: 70%;
+  width: 70%
 }
 
 .iconcard>img {
   display: flex;
   color: var(--primario);
-  transition-duration: 0.4s;
+  transition-duration: .4s;
   width: 80px;
-  height: 80px;
+  height: 80px
 }
 
 .iconcard>img:hover {
   transform: scale(1.4);
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 .heromain {
@@ -203,29 +196,27 @@ hr {
   background-color: var(--fondoprimario);
   color: var(--textosecundario);
   gap: 3rem;
-
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem
 }
 
 .heromain h3 {
   font-family: var(--subtitulo);
   color: var(--textosecundario);
   margin: auto;
-  width: 70%;
-
+  width: 70%
 }
 
 .heromain p {
   font-family: var(--parrafo);
   margin: auto;
-  width: 70%;
+  width: 70%
 }
 
 .heromain h2 {
   font-family: var(--subtitulo);
   margin: auto;
-  width: 70%;
+  width: 70%
 }
 
 footer {
@@ -234,14 +225,14 @@ footer {
   align-content: center;
   width: 100%;
   text-align: center;
-  background-color: var(--boton);
+  background-color: var(--boton)
 }
 
 footer a,
 footer p {
   color: var(--textosecundario);
   font-family: var(--parrafo);
-  padding-bottom: 1rem;
+  padding-bottom: 1rem
 }
 
 .footlink {
@@ -249,13 +240,13 @@ footer p {
   padding-top: 1rem;
   margin-left: 2rem;
   color: var(--fondocolor);
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 .footlink:hover {
   color: var(--textosecundario);
   transform: scale(1.4);
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 .form-card {
@@ -266,22 +257,21 @@ footer p {
   background-color: var(--fondoprimario);
   padding-bottom: 5rem;
   margin: auto;
-  width: 50%;
-
+  width: 50%
 }
 
 .form-card>input,
 .form-card>textarea {
   width: 100%;
   font-family: var(--parrafo);
-  margin: 1rem;
+  margin: 1rem
 }
 
 input,
 textarea {
   border-radius: 4px;
   resize: vertical;
-  padding: 1rem;
+  padding: 1rem
 }
 
 button {
@@ -296,16 +286,16 @@ button {
   cursor: pointer;
   width: 7rem;
   text-align: center;
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 button:hover {
   background-color: var(--fondocolor);
-  transition-duration: 0.4s;
+  transition-duration: .4s
 }
 
 .view {
-  display: none;
+  display: none
 }
 
 #loader {
@@ -314,20 +304,20 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, .8);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9999
 }
 
 @keyframes ldio-lhtc1ypfhfm {
   0% {
-    transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0)
   }
 
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg)
   }
 }
 
@@ -341,14 +331,14 @@ button:hover {
   border-radius: 50%;
   animation: ldio-lhtc1ypfhfm 1s linear infinite;
   top: 100px;
-  left: 100px;
+  left: 100px
 }
 
 .loadingio-spinner-rolling-dbbyt9o1214 {
   width: 200px;
   height: 200px;
   display: inline-block;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .ldio-lhtc1ypfhfm {
@@ -357,36 +347,33 @@ button:hover {
   position: relative;
   transform: translateZ(0) scale(1);
   backface-visibility: hidden;
-  transform-origin: 0 0;
+  transform-origin: 0 0
 }
 
 .ldio-lhtc1ypfhfm div {
-  box-sizing: content-box;
+  box-sizing: content-box
 }
 
 .error-message {
   color: red;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 5px
 }
 
-/* The switch - the box around the slider */
 .switch {
   position: fixed;
   width: 60px;
   height: 34px;
-  top: 50px;
-  right: 20px;
+  bottom: 50px;
+  right: 10px
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
-  height: 0;
+  height: 0
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -395,7 +382,7 @@ button:hover {
   right: 0;
   bottom: 0;
   background-color: #004643;
-  transition: .4s;
+  transition: .4s
 }
 
 .slider:before {
@@ -405,32 +392,30 @@ button:hover {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  transition: .4s;
+  background-color: #fff;
+  transition: .4s
 }
 
 input:checked+.slider {
-  background-color: #56d364;
+  background-color: #56d364
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px #004643;
+  box-shadow: 0 0 1px #004643
 }
 
 input:checked+.slider:before {
-
-  transform: translateX(26px);
+  transform: translateX(26px)
 }
 
-/* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 34px
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 50%
 }
 
-#citas>p{
-  font-size: 0.5rem;
+#citas>p {
+  font-size: .5rem
 }
