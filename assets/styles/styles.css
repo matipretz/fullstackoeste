@@ -375,8 +375,8 @@ button:hover {
   position: fixed;
   width: 60px;
   height: 34px;
-  bottom: 40px;
-  right: 40px;
+  top: 50px;
+  right: 20px;
 }
 
 /* Hide default HTML checkbox */

@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const citasElement = document.getElementById('citas');
 
@@ -35,14 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (citasElement.firstChild) {
       const citaAnterior = citasElement.firstChild;
-      citaAnterior.style.opacity = 0; // Hacemos la cita anterior invisible
+      citaAnterior.style.opacity = 0;
       setTimeout(() => {
         citasElement.replaceChild(p, citaAnterior);
-        p.style.opacity = 1; // Hacemos la nueva cita visible con un fade in
-      }, 1000); // Después de 1 segundo, reemplazamos la cita y hacemos el fade in
+        p.style.opacity = 1;
+      }, 200);
     } else {
       citasElement.appendChild(p);
-      p.style.opacity = 1; // Hacemos la nueva cita visible con un fade in
+      p.style.opacity = 1;
     }
   }
 
