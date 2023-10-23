@@ -1,7 +1,7 @@
 :root {
-  --titulo: Orbitron;
-  --subtitulo: Noto Sans Display;
-  --parrafo: Noto Sans Display;
+  --titulo: Orbitron, Helvetica ;
+  --subtitulo: Noto Sans Display, Arial;
+  --parrafo: Noto Sans Display, Arial;
   --fondoprimario: #161b22;
   --fondocolor: #004643;
   --boton: #21262d;
